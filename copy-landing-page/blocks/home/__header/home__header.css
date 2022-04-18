@@ -1,0 +1,9 @@
+.home__header {
+  width: 643px;
+  height: 140px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  display: flex;
+  color: #ffffff;
+}

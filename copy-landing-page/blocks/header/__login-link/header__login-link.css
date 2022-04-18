@@ -1,0 +1,10 @@
+.header__login-link {
+  margin-left: 5px;
+  text-decoration: none;
+  color: #fff;
+  font-family: 'Noto Sans';
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  border-bottom: 1px solid #fff;
+}

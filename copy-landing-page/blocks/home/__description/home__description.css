@@ -1,0 +1,8 @@
+.home__description {
+  width: 380px;
+  height: 81px;
+  font-family: 'Noto Sans';
+  font-weight: 400;
+  display: flex;
+  color: #FFFFFF;
+}

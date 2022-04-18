@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Avenir';
+    font-weight: 500;
+    src: url("./fonts/avenir-medium.woff2") format("woff2"),
+        url("./fonts/avenir-medium.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'Avenir';
+    font-weight: 800;
+    src: url("./fonts/avenir-extrabold.woff2") format("woff2"),
+        url("./fonts/avenir-extrabold.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'montserrat';
+    font-weight: 700;
+    src: url("./fonts/montserrat-bold.woff2") format("woff2"),
+        url("./fonts/montserrat-bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    src: url("./fonts/notosans-regular.woff2") format("woff2"),
+        url("./fonts/notosans-regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'Noto Sans';
+    font-weight: 700;
+    src: url("./fonts/notosans-bold.woff2") format("woff2"),
+        url("./fonts/notosans-bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 500;
+    src: url("./fonts/roboto-medium.woff2") format("woff2"),
+        url("./fonts/roboto-medium.woff") format("woff");
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 700;
+    src: url("./fonts/roboto-bold.ttf") format("ttf");
+}
+

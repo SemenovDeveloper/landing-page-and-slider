@@ -1,0 +1,6 @@
+.home__round-blur {
+  width: 125px;
+  height: 125px;
+  background: rgba(96, 92, 234, 0.5);
+  filter: blur(100px);
+}
