@@ -148,7 +148,6 @@
 /* --HOME------------------------------------------------ */
 
 .home {
-  height: 856px;
   overflow: hidden;
   margin: -200px 0 0 0;
   padding: 200px 0 0 0;
@@ -157,23 +156,39 @@
   width: 100%;
   display: grid;
   grid-template-areas:
-      "title iphone"
-      "subtitle-block iphone"
+      "text iphone"
+      "text iphone"
       ". iphone"
       "download stores";
   grid-template-columns: 1fr 599px;
+}
+
+.home__line {
+  z-index: 2;
+  width: 140px;
+  height: 0px;
+  border: 4px solid #FFFFFF;
+  transform: rotate(120.61deg);
+  position: absolute;
+  left: 93px;
+  top: 670px;
+}
+
+@media screen and (max-width: 1060px) {
+  .home__line {
+    display: none;
+  }
 }
 
 .home__round-blur {
   z-index: 1;
   position: absolute;
   left: 93px;
-  top: 470px;
+  top: 570px;
   width: 125px;
   height: 125px;
   background: rgba(96, 92, 234, 0.5);
   filter: blur(50px);
-  border: 2px solid wheat;
 }
 
 @media screen and (max-width: 992px) {
@@ -191,6 +206,7 @@
   background: rgba(250, 0, 255, 0.2);
   filter: blur(250px);
   transform: rotate(-105.26deg);
+  overflow: hidden;
 }
 
 @media screen and (max-width: 992px) {
@@ -216,18 +232,13 @@
   z-index: 2;
   grid-area: subtitle-block;
 }
-.home__line {
-  z-index: 2;
-  width: 139.43px;
-  border: 4px solid #FFFFFF;
-  transform: rotate(120.61deg);
-}
+
 
 .home__iphone {
   z-index: 2;
   grid-area: iphone;
   border-radius: 52px;
-  margin: 29px 0 0 84px;
+  margin: 29px 0 83px 84px;
 }
 .home__download-caption {  
   grid-area: download;
@@ -260,18 +271,54 @@
 }
 
 .text {
-
+  z-index: 2;
+  margin: 143px 0 0 100px
 }
+
+@media screen and (max-width: 992px) {
+  .text {
+    margin: 98px 0 0 15px
+  }
+}
+
+
 .text__title {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
 }
-.text__title_h1{
-  
+
+.text__title_athome{
+  font-size: 64px;
+  line-height: 70px;
 }
+
+@media screen and (max-width: 992px) {
+  .text__title_athome {
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
+
+
 .text__subtitle {  
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 400;
 }
+
+.text__subtitle_athome{
+  font-size: 20px;
+  line-height: 27px;
+  margin: 129px 0 0 105px;
+  max-width: 380px;  
+}
+
+@media screen and (max-width: 992px) {
+  .text__subtitle_athome {
+    font-size: 16px;
+    line-height: 22px;
+    margin: 24px 0 0 0px;
+  }
+}
+
