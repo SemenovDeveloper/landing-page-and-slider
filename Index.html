@@ -31,7 +31,7 @@
           </div>
         </header>
         <main class="main">
-          <div class="home">
+          <section class="home">
             <div class="home__line"></div>
             <div class="home__round-blur"></div>
             <div class="home__wrong-shape-blur"></div>
@@ -42,21 +42,26 @@
                 business from a single dashboard
               </p>
             </div>
-            <!-- <h1 class="home__title text__title">A platform<br>that works smarter</h1>
-            <div class="home__subtitle-block">
-            <div class="home__line"></div>
-            <p class="home__subtitle text__subtitle">
-              NoTab allows bars & nightclubs to manage, understand, and grow their
-              business from a single dashboard
-            </p>
-          </div> -->
-            <img
+            <div class="home__iphone">
+              <picture>
+                <source srcset="./copy-landing-page/img/iphone-home-mobile.webp" media="(max-width: 992px)" type="image/webp">              
+                <source srcset="./copy-landing-page/img/iphone-home.webp" type="image/webp">
+                <img src="./copy-landing-page/img/iphone-home.png" alt="iphone" />
+              </picture>
+            </div>
+            <!-- <picture class="home__iphone">
+              <source srcset="./copy-landing-page/img/iphone-home-mobile.webp" media="(max-width: 992px)" type="image/webp">              
+              <source srcset="./copy-landing-page/img/iphone-home.webp" type="image/webp">
+              <img src="./copy-landing-page/img/iphone-home.png" alt="iphone" />
+           </picture> -->
+            <!-- <div class="home__iphone"></div> -->
+            <!-- <img
               class="home__iphone"
               src="./copy-landing-page/blocks/home/__iphone/iphone.png"
               alt="Iphone"
-            />            
-            <h2 class="home__download-caption _title">DOWNLOAD OUR APP</h2>
-            <div class="home__stores app-links app-links_row_small">
+            />             -->
+            <h2 class="home__download-caption">DOWNLOAD OUR APP</h2>
+            <!-- <div class="home__stores app-links app-links_row_small">
               <a href="" class="app-links__appstore">
                 <img
                   src="./copy-landing-page/blocks/app-links/__link/app-store.png"
@@ -69,46 +74,24 @@
                   alt=""
                 />
               </a>
-            </div>           
+            </div>            -->
+            <div class="home_stores app-links">
+              <div class="applinks__appstore">
+                <picture>
+                  <source srcset="./copy-landing-page/img/appstore-mobile.webp" media="(max-width: 992px)" type="image/webp">              
+                  <source srcset="./copy-landing-page/img/appstore.webp" type="image/webp">
+                  <img src="./copy-landing-page/img/appstore.png" alt="appstore" />
+                </picture>
+              </div>
+              <div class="app-links__googleplay">
+                <picture>
+                  <source srcset="./copy-landing-page/img/googleplay-mobile.webp" media="(max-width: 992px)" type="image/webp">              
+                  <source srcset="./copy-landing-page/img/googleplay.webp" type="image/webp">
+                  <img src="./copy-landing-page/img/googleplay.png" alt="googleplay" />
+                </picture>
+              </div>
+            </div>            
           </section>    
-          <!-- <section class="home">
-            <div class="home__about-notab">
-              <div class="home__text">
-                  <h1 class="home__title _title">A platform<br>that works smarter</h1>
-                  <div class="home__description">
-                  <div class="home__round-blur">round-blur</div>
-                  <div class="home__line"></div>
-                  <p class="home__subtitle _subtitle">
-                    NoTab allows bars & nightclubs to manage, understand, and grow their
-                    business from a single dashboard
-                  </p>
-                </div>
-            </div>
-            <img
-              class="home__iphone"
-              src="./copy-landing-page/blocks/home/__iphone/iphone.png"
-              alt="Iphone"
-            />
-            <div class="home__wrong-shape-blur">wrong shape blur</div>
-            </div>
-            <div class="home__download">
-              <h2 class="home__download-caption title">DOWNLOAD OUR APP</h2>
-              <div class="home__stores app-links">
-                <a href="" class="app-links__link">
-                  <img
-                    src="./copy-landing-page/blocks/app-links/__link/app-store.png"
-                    alt="App store"
-                  />
-                </a>
-                <a href="" class="app-links__link">
-                  <img
-                    src="./copy-landing-page/blocks/app-links/__link/google-play.png"
-                    alt=""
-                  />
-                </a>
-              </div>            
-            </div>
-          </section>         -->
         </main>
         <footer></footer>
       </div>

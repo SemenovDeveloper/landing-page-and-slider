@@ -63,6 +63,7 @@
 }
 
 .header__notab-block {
+  z-index: 10;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -103,6 +104,7 @@
 }
 
 .header__login {
+  z-index: 10;
   display: flex;  
   align-items: center;
   margin: 18px 0 0 108px;
@@ -160,7 +162,17 @@
       "text iphone"
       ". iphone"
       "download stores";
-  grid-template-columns: 1fr 599px;
+  grid-template-columns: 1fr 40%;
+}
+@media screen and (max-width: 992px) {
+  .home {
+    grid-template-areas:
+    "text iphone"
+    "text iphone"
+    "download download"
+    "stores stores";
+    grid-template-columns: 1fr 25%;
+  }
 }
 
 .home__line {
@@ -214,32 +226,31 @@
       width: 363px;
       height: 474px;
       background-image: url(./img/wrong-shape-blur-mobile.svg);
-      left: 124px;
-      top: 103px;
-      transform: rotate(90.69deg);
+      background: rgba(250, 0, 255, 0.5);
+      filter: blur(250px);
+      transform: rotate(-90.69deg);
   }
 }
 
-.home__title {
-  z-index: 2;
-  grid-area: title;
-  font-size: 64px;
-  line-height: 70px;
-  margin: 143px 0 0 100px;
-}
-
-.home__subtitle-block {
-  z-index: 2;
-  grid-area: subtitle-block;
-}
-
-
 .home__iphone {
+  width: 333x;
+  height: 668px;
   z-index: 2;
   grid-area: iphone;
-  border-radius: 52px;
-  margin: 29px 0 83px 84px;
+  border-radius: 50px;
+  overflow: hidden;
+  margin: 29px auto 83px auto;
 }
+
+@media screen and (max-width: 992px) {
+  .home__iphone {
+    border-radius: 15px;
+    margin: 65px auto 55px auto;
+    width: 161px;
+    height: 323px;
+  }
+}
+
 .home__download-caption {  
   grid-area: download;
   margin: 0 0 0 100px;
@@ -247,37 +258,22 @@
   line-height: 70px;
 }
 
-.home__stores {
-  grid-area: stores;  
-}
-.app-links {
-  display: flex;
-}
-.app-links__appstore {
-  width: 164px;
-  height: 52px;
-}
-
-.app-links__googleplay{
-  width: 184.5px;
-  height: 51.33px;
-  margin-left: 28px;
-}
-
-.app-links_row_small {
-  flex-direction: row;
-  margin: 0 100px 0 0;
-  justify-content: center;
+@media screen and (max-width: 992px) {
+  .home__download-caption {
+    margin: 0px auto 34px auto;
+    font-size: 24px;
+    line-height: 29px;
+  }
 }
 
 .text {
   z-index: 2;
-  margin: 143px 0 0 100px
+  margin: 143px 0 0 100px;
 }
 
 @media screen and (max-width: 992px) {
   .text {
-    margin: 98px 0 0 15px
+    margin: 98px 15px 0 15px
   }
 }
 
@@ -322,3 +318,75 @@
   }
 }
 
+.home__stores {
+  grid-area: stores;  
+}
+/* .app-links {  
+  grid-area: stores; 
+  width: 100%;
+  z-index: 2;
+  display: flex;
+  margin: 0px auto;
+}
+.app-links__appstore {
+  width: 164px;
+  height: 52px;
+}
+
+.app-links__googleplay{
+  width: 184.5px;
+  height: 51.33px;
+  margin-left: 28px;
+}
+
+.app-links_row_small {
+  flex-direction: row;
+  margin: 0 100px 0 0;
+  justify-content: center;
+} */
+.home__stores {
+  margin-top: 34px;
+}
+
+.app-links {
+  grid-area: stores;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 992px) {
+  .app-links {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.app-links__appstore {
+  width: 164px;
+  height: 52px;
+  margin: 0 24px;
+}
+
+@media screen and (max-width: 992px) {
+  .app-links__appstore {
+    width: 185px;
+    height: 60px;
+  }
+}
+
+.app-links__googleplay{
+  width: 184.5px;
+  height: 51.33px;
+  margin: 0 24px;
+}
+
+@media screen and (max-width: 992px) {
+  .app-links__googleplay {
+    margin: 24px;
+    width: 185px;
+    height: 60px;
+  }
+}
