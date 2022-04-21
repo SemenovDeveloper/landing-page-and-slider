@@ -26,7 +26,8 @@
 
 .wrapper {
   min-height: 100%;
-  overflow: hidden;  
+  overflow: hidden;
+  background-color: #000000;
 }
 
 .container {
@@ -164,6 +165,7 @@
       "download stores";
   grid-template-columns: 1fr 40%;
 }
+
 @media screen and (max-width: 992px) {
   .home {
     grid-template-areas:
@@ -242,7 +244,7 @@
   margin: 29px auto 83px auto;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 767px) {
   .home__iphone {
     border-radius: 15px;
     margin: 65px auto 55px auto;
@@ -287,9 +289,10 @@
 .text__title_athome{
   font-size: 64px;
   line-height: 70px;
+  color: #FFFFFF;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 767px) {
   .text__title_athome {
     font-size: 35px;
     line-height: 40px;
@@ -301,6 +304,7 @@
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 400;
+  color: #FFFFFF;
 }
 
 .text__subtitle_athome{
@@ -310,7 +314,7 @@
   max-width: 380px;  
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 767px) {
   .text__subtitle_athome {
     font-size: 16px;
     line-height: 22px;
@@ -320,31 +324,6 @@
 
 .home__stores {
   grid-area: stores;  
-}
-/* .app-links {  
-  grid-area: stores; 
-  width: 100%;
-  z-index: 2;
-  display: flex;
-  margin: 0px auto;
-}
-.app-links__appstore {
-  width: 164px;
-  height: 52px;
-}
-
-.app-links__googleplay{
-  width: 184.5px;
-  height: 51.33px;
-  margin-left: 28px;
-}
-
-.app-links_row_small {
-  flex-direction: row;
-  margin: 0 100px 0 0;
-  justify-content: center;
-} */
-.home__stores {
   margin-top: 34px;
 }
 
@@ -354,7 +333,7 @@
   justify-content: center;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 479px) {
   .app-links {
     flex-direction: column;
     justify-content: center;
@@ -374,6 +353,14 @@
   .app-links__appstore {
     width: 185px;
     height: 60px;
+    margin: 0 5px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .app-links__appstore {
+    width: 185px;
+    height: 60px;
   }
 }
 
@@ -385,8 +372,79 @@
 
 @media screen and (max-width: 992px) {
   .app-links__googleplay {
+    width: 185px;
+    height: 60px;
+    margin: 0 5px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .app-links__googleplay {
     margin: 24px;
     width: 185px;
     height: 60px;
+  }
+}
+/* --Paetnership---------------------------------------------- */
+.partnership {
+  width: 100%;
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+}
+@media screen and (max-width: 767px) {
+  .partnership {
+    flex-direction: column;
+    margin-top: 45px;
+  }
+}
+.contact {
+  width: 503px;
+  height: 312px;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 22px;
+  display: flex;
+  margin: 154px 40px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+  .contact {
+    width: auto;
+    height: auto;
+    margin: 15px;
+  }
+}
+.contact__title {  
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 41px;
+  color:#FFFFFF;
+  margin: 0 73px 30px 55px;
+}
+@media screen and (max-width: 767px) {
+  .contact__title {
+    font-size: 24px;
+    line-height: 33px;
+    margin: 39px 54px 30px 33px;
+  }
+}
+.contact__link {    
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  color:#FFFFFF;
+  margin: 0px 55px;
+}
+@media screen and (max-width: 767px) {
+  .contact__link {
+    font-size: 18px;
+    line-height: 25px;
+    margin: 0px 54px 40px 33px;
   }
 }
