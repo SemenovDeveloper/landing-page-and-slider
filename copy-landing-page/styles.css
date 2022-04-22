@@ -463,10 +463,12 @@
 
 .mission__iphone {
   position: relative;
-  margin: 50px auto;
+  overflow: hidden;
+  border-radius: 85px;
+  margin: -25px auto;
   width: 498px;
   height: 999px;
-  transform-origin: 100px 100px;
+  transform-origin: 0px 125px;
   transform: rotate(90deg);
 }
 
@@ -567,4 +569,10 @@
     left: 15px;
     top: 95px;
   }
+}
+/* --Scanner------------------------------------- */
+.scanner {
+  margin: -300px;
+}
+.scanner__barman {
 }
