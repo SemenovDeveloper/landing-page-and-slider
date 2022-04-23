@@ -382,7 +382,7 @@
     height: 60px;
   }
 }
-/* --Paetnership---------------------------------------------- */
+/* --Partnership---------------------------------------------- */
 .partnership {
   width: 100%;
   display: flex;
@@ -401,7 +401,7 @@
   border: 2px solid rgba(255, 255, 255, 0.5);
   border-radius: 22px;
   display: flex;
-  margin: 154px 40px;
+  margin: 154px 40px 0;
   flex-direction: column;
   justify-content: center;
 }
@@ -463,12 +463,11 @@
 
 .mission__iphone {
   position: relative;
-  overflow: hidden;
   border-radius: 85px;
-  margin: -25px auto;
+  margin: 5px auto 115px;
   width: 498px;
   height: 999px;
-  transform-origin: 0px 125px;
+  transform-origin: 0px 246px;
   transform: rotate(90deg);
 }
 
@@ -480,6 +479,7 @@
     width: 173px;
     height: 346px;
     transform: rotate(0deg);
+    border-radius: 28px;
   }
 }
 
@@ -502,7 +502,7 @@
   width: 358px;
   height: 322px;
   position: absolute;
-  top: 82px;
+  top: 236px;
   left: 60%;
   transition: left 2s linear;
 }
@@ -572,7 +572,149 @@
 }
 /* --Scanner------------------------------------- */
 .scanner {
-  margin: -300px;
+  position: relative;
+  display: grid;
+  grid-template-areas:
+  "verification success text-scanner";
+  grid-template-columns: 1fr 1fr 44%;
+}
+@media screen and (max-width: 1260px) {
+  .scanner {
+    grid-template-areas:
+    "text-scanner text-scanner"
+    "verification success";
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 767px) {
+  .scanner {
+    grid-template-areas:
+    "text-scanner"
+    "verification"
+    "success";
+    grid-template-columns: 1fr;
+  }
+}
+.scanner__blur-layer{
+  position: absolute;
+  top: 0;
+  left: 0%;
+  z-index: 2;
+  width: 1440px;
+  height: 1060px;
+  background: linear-gradient(179.83deg, #000000 -3.1%, rgba(0, 0, 0, 0) 56.76%, #000000 83.92%);
+}
+@media screen and (max-width: 454px) {
+  .scanner__blur-layer {
+    width: 457px;
+    height: 300px;
+    background: linear-gradient(179.83deg, #000000 -1.85%, rgba(0, 0, 0, 0.67) 11.21%, rgba(0, 0, 0, 0) 54.71%, #000000 83.92%);                                                      
+  }
 }
 .scanner__barman {
+  z-index: 1;
+  position: absolute;
+  width: 1440px;
+  height: 836px;
+}
+@media screen and (max-width: 454px) {
+  .scanner__barman {
+    width: 454px;
+    height: 263px;
+  }
+}
+.scanner__barman img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.scanner__iphone-verification {
+  width: 333x;
+  height: 667px;
+  z-index: 3;
+  grid-area: verification;
+  margin: 467px 0px 0px 100px;
+}
+@media screen and (max-width: 1260px) {
+  .scanner__iphone-verification {
+    margin: 200px auto 0px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .scanner__iphone-verification {
+    margin-top: 70px;
+    width: 287px;
+    height: 576px;
+  }
+}
+.scanner__iphone-success {  
+  width: 333x;
+  height: 667px;
+  z-index: 3;
+  grid-area: success;
+  margin: 467px 0px 0px 50px;
+}
+@media screen and (max-width: 1260px) {
+  .scanner__iphone-success {
+    margin: 200px auto 0px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .scanner__iphone-success {
+    margin-top: 55px;
+    width: 287px;
+    height: 576px;
+  }
+}
+@media screen and (max-width: 1260px) {
+  .text_at_scanner {
+    grid-area: text-scanner;
+    margin: 100px 100px 0px 100px;
+    max-width: 815px;
+  }
+}
+.text_at_scanner {
+  z-index: 3;
+  grid-area: text-scanner;
+  margin: 854px 0px 0px 129px;
+  max-width: 316px;
+}
+@media screen and (max-width: 1260px) {
+  .text_at_scanner {
+    grid-area: text-scanner;
+    margin: 100px 100px 0px 100px;
+    max-width: 815px;
+  }
+}
+@media screen and (max-width: 454px) {
+  .text_at_scanner {
+    margin: 234px 15px 0;
+  }
+}
+.text__title_at_scanner {
+  margin: 0px;
+  font-size: 51px;
+  line-height: 62px;
+}
+@media screen and (max-width: 454px) {
+  .text__title_at_scanner {
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+.text__subtitle_at_scanner {
+  margin-top: 23px;
+  max-width: 316px;
+  font-size: 18px;
+  line-height: 25px;
+}
+@media screen and (max-width: 454px) {
+  .text__subtitle_at_scanner {
+    margin-top: 24px;
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
