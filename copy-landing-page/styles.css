@@ -616,6 +616,8 @@
   position: absolute;
   width: 1440px;
   height: 836px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 @media screen and (max-width: 454px) {
   .scanner__barman {
@@ -640,7 +642,7 @@
 }
 @media screen and (max-width: 1260px) {
   .scanner__iphone-verification {
-    margin: 200px auto 0px;
+    margin: 70px auto 0px;
   }
 }
 @media screen and (max-width: 454px) {
@@ -659,7 +661,7 @@
 }
 @media screen and (max-width: 1260px) {
   .scanner__iphone-success {
-    margin: 200px auto 0px;
+    margin: 70px auto 0px;
   }
 }
 @media screen and (max-width: 454px) {
