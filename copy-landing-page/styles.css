@@ -643,7 +643,7 @@
     margin: 200px auto 0px;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 454px) {
   .scanner__iphone-verification {
     margin-top: 70px;
     width: 287px;
@@ -662,7 +662,7 @@
     margin: 200px auto 0px;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 454px) {
   .scanner__iphone-success {
     margin-top: 55px;
     width: 287px;
