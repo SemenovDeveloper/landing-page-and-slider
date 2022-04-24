@@ -797,7 +797,9 @@
   .bi-tool__graph-wrapper {
     width: 543px;
     height: 281px;
-    margin: 30px auto 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 30px;
   }
 } 
 .bi-tool__graphics {
@@ -805,16 +807,14 @@
   height: 100%;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 0;  
 }
-@media screen and (max-width: 767px) {
-  .bi-tool__graphics {    
-    transform: translateX(-12%);
-  }
-}
-.bi-tool__blue-graph {
+
+.bi-tool__blue-graph {  
   position: absolute;
   margin: 250px 0 0 25px; 
+  width: 192px;
+  height: 114px;
 }
 @media screen and (max-width: 767px) {
   .bi-tool__blue-graph {
@@ -825,54 +825,78 @@
   position: absolute;
   margin: 292px 0 0 280px;
   z-index: 2;
+  width: 194px;
+  height: 118px;
 }
 @media screen and (max-width: 767px) {
   .bi-tool__dark-graph {
     margin: 49px 0 0 293px;
+    width: 91px;
+    height: 55px;
   }
 }
 .bi-tool__bar-graph {
   position: absolute;
   margin: 393px 0 0 207px;
+  width: 194px;
+  height: 118px;
 }
 @media screen and (max-width: 767px) {
   .bi-tool__bar-graph {
     margin: 49px 0 0 293px;
+    width: 91px;
+    height: 55px;
   }
 }
 .bi-tool__percent-graph {
   position: absolute;
   margin: 465px 0 0 447px;
+  width: 281px;
+  height: 56px;
 }
 @media screen and (max-width: 767px) {
   .bi-tool__percent-graph {
     margin: 187px 0 0 247px;
+    width: 296px;
+    height: 59px;
   }
 }
 .bi-tool__round-graph {
   position: absolute;
   margin: 182px 0 0 461px;
+  width: 182px;
+  height: 193px;
 }
 @media screen and (max-width: 767px) {
   .bi-tool__round-graph {
     margin: 0px 0 0 383px;
+    width: 86px;
+    height: 91px;
   }
 }
 .bi-tool__sector-graph {
   position: absolute;
   margin: 183px 0 0 157px;
+  width: 233x;
+  height: 45px;
 }
 @media screen and (max-width: 767px) {
   .bi-tool__sector-graph {
     margin: 43px 0 0 120px;
+    width: 109px;
+    height: 21px;
   }
 }
 .bi-tool__white-graph {
   position: absolute;
   margin: 0px 0 0 337px;
+  width: 252px;
+  height: 150px;
 }
 @media screen and (max-width: 767px) {
   .bi-tool__white-graph {
     margin: 129px 0 0 55px;
+    width: 145px;
+    height: 86px;
   }
 }
