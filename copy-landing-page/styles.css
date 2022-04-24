@@ -38,16 +38,99 @@
   color: #ffffff;
 }
 /* --COMMON---------------------------------------------------------- */
-/* ._title {
-  font-family: 'Montserrat';
+.text {
+  z-index: 5;
+  grid-area: text;
+}
+.text__title {
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
+  margin-top: 0px;
+  font-size: 51px;
+  line-height: 62px;
 }
-._subtitle {  
-  font-family: 'Noto Sans';
+@media screen and (max-width: 767px) {
+  .text__title {
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+
+.text__subtitle {
+  font-family: "Noto Sans";
   font-style: normal;
   font-weight: 400;
-} */
+  margin-top: 23px;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
+}
+@media screen and (max-width: 767px) {
+  .text__subtitle {
+    margin-top: 24px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.app-links {
+  grid-area: stores;
+  display: flex;
+}
+
+@media screen and (max-width: 479px) {
+  .app-links {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.app-links__appstore {
+  width: 164px;
+  height: 52px;
+  margin: 0 24px;
+}
+
+@media screen and (max-width: 992px) {
+  .app-links__appstore {
+    width: 185px;
+    height: 60px;
+    margin: 0 5px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .app-links__appstore {
+    width: 185px;
+    height: 60px;
+  }
+}
+
+.app-links__googleplay {
+  width: 184.5px;
+  height: 51.33px;
+  margin: 0 24px;
+}
+
+@media screen and (max-width: 992px) {
+  .app-links__googleplay {
+    width: 185px;
+    height: 60px;
+    margin: 0 5px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .app-links__googleplay {
+    margin: 24px;
+    width: 185px;
+    height: 60px;
+  }
+}
 /* --header------------------------------------ */
 .header {
   z-index: 25;
@@ -278,16 +361,10 @@
   }
 }
 
-.text__title {
-  font-family: "Montserrat";
-  font-style: normal;
-  font-weight: 700;
-}
-
 .text__title_athome {
   font-size: 64px;
   line-height: 70px;
-  color: #ffffff;
+  color: #ffffff;  
 }
 
 @media screen and (max-width: 767px) {
@@ -295,13 +372,6 @@
     font-size: 35px;
     line-height: 40px;
   }
-}
-
-.text__subtitle {
-  font-family: "Noto Sans";
-  font-style: normal;
-  font-weight: 400;
-  color: #ffffff;
 }
 
 .text__subtitle_athome {
@@ -322,65 +392,7 @@
 .home__stores {
   grid-area: stores;
   margin-top: 34px;
-}
-
-.app-links {
-  grid-area: stores;
-  display: flex;
   justify-content: center;
-}
-
-@media screen and (max-width: 479px) {
-  .app-links {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 16px;
-    line-height: 22px;
-  }
-}
-
-.app-links__appstore {
-  width: 164px;
-  height: 52px;
-  margin: 0 24px;
-}
-
-@media screen and (max-width: 992px) {
-  .app-links__appstore {
-    width: 185px;
-    height: 60px;
-    margin: 0 5px;
-  }
-}
-
-@media screen and (max-width: 479px) {
-  .app-links__appstore {
-    width: 185px;
-    height: 60px;
-  }
-}
-
-.app-links__googleplay {
-  width: 184.5px;
-  height: 51.33px;
-  margin: 0 24px;
-}
-
-@media screen and (max-width: 992px) {
-  .app-links__googleplay {
-    width: 185px;
-    height: 60px;
-    margin: 0 5px;
-  }
-}
-
-@media screen and (max-width: 479px) {
-  .app-links__googleplay {
-    margin: 24px;
-    width: 185px;
-    height: 60px;
-  }
 }
 /* --Partnership---------------------------------------------- */
 .partnership {
@@ -521,9 +533,7 @@
 .misson__text:hover {
   left: 100%;
 }
-.text {
-  grid-area: text;
-}
+
 .text__title {
 }
 .text__title_atmission {
@@ -724,7 +734,6 @@
 .bi-tool {
   display: flex;
   overflow: hidden;
-  height: 949px;
 }
 @media screen and (max-width: 767px) {
   .bi-tool {
@@ -774,11 +783,6 @@
     font-size: 24px;
     line-height: 29px;
   }
-}
-.text__subtitle_at_bi {
-  margin-top: 23px;
-  font-size: 18px;
-  line-height: 25px;
 }
 @media screen and (max-width: 767px) {
   .text__subtitle_at_bi {
@@ -899,4 +903,77 @@
     width: 145px;
     height: 86px;
   }
+}
+/* --QR-Code---------------------------------------- */
+.qr-code {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 44% 28% 28%;
+  grid-template-rows: 443px 310px 310px 1fr;
+  grid-template-areas: 
+  ". . ."
+  ". iphone-1 ."
+  "description iphone-1 iphone-2"
+  ". . iphone-2";
+}
+
+.qr-code__background {
+  position: absolute;
+  width: 1440px;
+  height: 687px;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.qr-code__gradient {
+  z-index: 2;
+  position: absolute;
+  width: 1440px;
+  height: 682px;
+  top: 5px;
+  left: 0;
+  background: linear-gradient(179.83deg, #000000 -3.1%, rgba(0, 0, 0, 0) 56.76%, #000000 83.92%);
+}
+
+.qr-code__party {
+  position: absolute;
+  top: 0;
+  left: -33px;
+}
+
+.qr-code__cocktail {  
+  position: absolute;
+  top: 0;
+  left: 789px;
+  z-index: 3;
+}
+
+.qr-code__night-life {
+  position: absolute;
+  top: -17px;
+  left: 1213px;
+  z-index: 3;
+}
+.qr-code__description {
+  grid-area: description;
+  display: flex;
+  flex-direction: column;
+}
+.text_at_qr-code{
+}
+.qr-code__stores {
+}
+
+.qr-code__iphone-payment {
+  z-index: 4;
+  grid-area: iphone-1;
+
+}
+.qr-code__iphone-cocking {
+  margin-top: 10px;
+  z-index: 4;
+  grid-area: iphone-2;
 }
