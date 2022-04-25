@@ -77,6 +77,7 @@
 .app-links {
   grid-area: stores;
   display: flex;
+  z-index: 5;
 }
 
 @media screen and (max-width: 479px) {
@@ -706,30 +707,11 @@
     margin: 234px 15px 0;
   }
 }
-.text__title_at_scanner {
-  margin: 0px;
-  font-size: 51px;
-  line-height: 62px;
-}
-@media screen and (max-width: 454px) {
-  .text__title_at_scanner {
-    font-size: 24px;
-    line-height: 29px;
-  }
-}
+
 .text__subtitle_at_scanner {
-  margin-top: 23px;
   max-width: 316px;
-  font-size: 18px;
-  line-height: 25px;
 }
-@media screen and (max-width: 454px) {
-  .text__subtitle_at_scanner {
-    margin-top: 24px;
-    font-size: 16px;
-    line-height: 22px;
-  }
-}
+
 /* --BI-Tool------------------------------------ */
 .bi-tool {
   display: flex;
@@ -918,7 +900,27 @@
   "description iphone-1 iphone-2"
   ". . iphone-2";
 }
-
+@media screen and (max-width: 992px) {
+  .qr-code {
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    grid-template-areas: 
+  ". . ."
+  ". iphone-1 ."
+  ".iphone-1 iphone-2"
+  "description description iphone-2";
+  }
+}
+@media screen and (max-width: 560px) {
+  .qr-code {
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+  "description"
+  "iphone-1"
+  "iphone-2"
+ ;
+  }
+}
 .qr-code__background {
   position: absolute;
   width: 1440px;
@@ -927,7 +929,13 @@
   left: 50%;
   transform: translateX(-50%);
 }
-
+@media screen and (max-width: 560px) {
+  .qr-code__background {
+    width: 455px;
+    height: 927px;
+    top: 5px;
+  }
+}
 .qr-code__gradient {
   z-index: 2;
   position: absolute;
@@ -937,11 +945,34 @@
   left: 0;
   background: linear-gradient(179.83deg, #000000 -3.1%, rgba(0, 0, 0, 0) 56.76%, #000000 83.92%);
 }
+@media screen and (max-width: 560px) {
+  .qr-code__gradient {
+    top: 0px;
+    left:50%;
+    transform: translateX(-50%);
+    width: 416px;
+    height: 335px;
+    background: linear-gradient(179.83deg, #000000 -3.1%, rgba(0, 0, 0, 0) 56.76%, #000000 83.92%);
+    z-index: 2;
+  }
+}
 
 .qr-code__party {
   position: absolute;
   top: 0;
   left: -33px;
+  width: 811px;
+  height: 606px;
+}
+@media screen and (max-width: 560px) {
+  .qr-code__party {
+    top: 0px;
+    left:50%;
+    transform: translateX(-50%);
+    width: 375px;
+    height: 311px;
+    z-index: 1;
+  }
 }
 
 .qr-code__cocktail {  
@@ -949,6 +980,18 @@
   top: 0;
   left: 789px;
   z-index: 3;
+  width: 811px;
+  height: 606px;
+}
+@media screen and (max-width: 560px) {
+  .qr-code__cocktail {
+    top: 601px;
+    left: 279px;
+    transform: translateX(-50%);
+    width: 312px;
+    height: 297px;
+    z-index: 2;
+  }
 }
 
 .qr-code__night-life {
@@ -956,13 +999,44 @@
   top: -17px;
   left: 1213px;
   z-index: 3;
+  width: 139px;
+  height: 54px;
+  transform: rotate(-12.84deg)
+}
+@media screen and (max-width: 560px) {
+  .qr-code__night-life {
+    top: 709px;
+    left: 117px;
+    transform: translateX(-50%) scale(0.5) rotate(-12.84deg);
+    width: 88px;
+    height: 35px;
+    z-index: 2;
+  }
 }
 .qr-code__description {
   grid-area: description;
   display: flex;
   flex-direction: column;
+  margin-left: 195px;
+}
+@media screen and (max-width: 1300px) {
+  .qr-code__description{
+    margin-left: 100px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .qr-code__description{
+    margin-left: 15px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .qr-code__description{
+    margin: 221px 15px 0 15px;
+  }
 }
 .text_at_qr-code{
+  max-width: 315px;
+  margin-bottom: 40px;
 }
 .qr-code__stores {
 }
@@ -970,10 +1044,29 @@
 .qr-code__iphone-payment {
   z-index: 4;
   grid-area: iphone-1;
-
+  width: 333px;
+  height: 667px;  
 }
-.qr-code__iphone-cocking {
+@media screen and (max-width: 560px) {
+  .qr-code__iphone-payment{ 
+    margin-top: 220px; 
+    width: 280.98px;
+    height: 563.68px;
+    justify-self: center;    
+  }
+}
+.qr-code__iphone-coocking {
   margin-top: 10px;
   z-index: 4;
   grid-area: iphone-2;
+  width: 333px;
+  height: 667px;  
+}
+@media screen and (max-width: 560px) {
+  .qr-code__iphone-coocking{
+    margin-top: 50px;
+    width: 280.98px;
+    height: 563.68px;  
+    justify-self: center; 
+  }
 }
