@@ -1375,3 +1375,49 @@
     border-radius: 10px;
   }
 }
+/* --No tab----------------------------------- */
+.notab {
+  position: relative;
+  height: 1106px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 992px) {
+  .notab {
+    display: none;
+  }
+}
+.notab__background {
+  z-index: 1;
+  position: absolute;
+  width: 1440px;
+  height: 1106px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.notab__iphone {
+  position: relative;
+  width: 859px;
+  height: 429px;
+}
+.notab__iphone-frame{
+  position: absolute;
+  width: 859px;
+  height: 429px;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 3;  
+  background-color: #000000;
+}
+.notab__iphone-screen {
+  position: absolute;
+  width: 676px;
+  height: 378px;
+  top: 25px;
+  left: 94px;
+  z-index: 4;
+}
