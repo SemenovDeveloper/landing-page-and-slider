@@ -1421,3 +1421,126 @@
   left: 94px;
   z-index: 4;
 }
+/* --FeedBack-------------------------------------- */
+.feedback {
+  position: relative;
+  max-width: 1440px;
+  display: flex;
+  margin-top: -116px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.feedback__top-blur{
+  position: absolute;
+  top: 0%;
+  left: calc(50% - 250px);
+  width: 248px;
+  height: 250px;
+  z-index: 2;
+  background: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%);
+  opacity: 0.3;
+  filter: blur(250px);
+  transform: rotate(5.78deg) translateX(-50%);
+}
+.text_center {
+  margin-top: 76px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.text__title_center {
+  margin: 0;
+}
+.text__subtitle_center {
+  max-width: 580px;
+  text-align: center;
+}
+.feedback__form {
+  width: 818px;
+  display: flex;
+  flex-direction: column;
+}
+.from {
+  width: 818px;
+  margin-top: 82px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__input {
+  width: 100%;
+  height: 83px;
+  margin-bottom: 23px;
+  background: #FFFFFF;
+  border: 1px solid #5C5C5C;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding-left: 23px;
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+}
+.form__flex-inputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.form__input_flex {
+  width: calc(50% - 12px);
+}
+
+.form__textarea {
+  width: 100%;
+  min-height: 199px;
+  resize: none;
+  outline: none;
+  background: #FFFFFF;
+  border: 1px solid #5C5C5C;
+  box-sizing: border-box;
+  border-radius: 10px;
+  padding: 29px 23px;
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+}
+.form__submit { 
+  margin: 60px auto 0 auto;
+  width: 398px;
+  height: 80px;
+  background: #000000;
+  color: #ffffff;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+.feedback__download-caption {
+  margin-top: 91px;
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  letter-spacing: 0.03em;
+}
+
+.app-links_big {
+}
+.applinks__appstore {
+}
+.applinks__appstore_big {
+}
+.app-links__googleplay {
+}
+.app-links__googleplay_big {
+}
