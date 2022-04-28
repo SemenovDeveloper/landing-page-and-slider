@@ -91,11 +91,28 @@
   }
 }
 
+.app-links_big {
+  width: 610px;
+  justify-content: space-between;  
+}
+
+@media screen and (max-width: 767px) {
+  .app-links_big {
+    width: 185px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
 .app-links__appstore {
   width: 164px;
   height: 52px;
   margin: 0 24px;
 }
+
 
 @media screen and (max-width: 992px) {
   .app-links__appstore {
@@ -109,6 +126,18 @@
   .app-links__appstore {
     width: 185px;
     height: 60px;
+  }
+}
+.applinks__appstore_big {
+  width: 259px;
+  height: 82px;
+  margin: 0;
+}
+@media screen and (max-width: 767px) {
+  .applinks__appstore_big {
+    width: 185px;
+    height: 60px;
+    margin: 0;
   }
 }
 
@@ -133,6 +162,19 @@
     height: 60px;
   }
 }
+.app-links__googleplay_big {
+  width: 293px;
+  height: 82px;
+  margin: 0;
+}
+@media screen and (max-width: 767px) {
+  .app-links__googleplay_big {
+    margin-top: 24px;
+    width: 185px;
+    height: 60px;
+  }
+}
+
 /* --header------------------------------------ */
 .header {
   z-index: 25;
@@ -1159,6 +1201,14 @@
     line-height: 22px;
   }
 }
+@media screen and (max-width: 380px) {
+  .generate-code__scan-text { 
+    top: 700px;
+    left: calc(50% + 90px);
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
 .generate-code__iphone { 
   position: absolute;
   top: 147px;
@@ -1317,6 +1367,11 @@
     border-radius: 10px;
   }
 }
+@media screen and (max-width: 380px) {
+  .advantages__caption-2 {
+    left: 165px;
+  }
+}
 .advantages__caption-3 {
   position: absolute;
   width: 185px;
@@ -1344,6 +1399,11 @@
     left: 240px;
     padding: 13px 18px;
     border-radius: 10px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .advantages__caption-3 {
+    left: 214px;
   }
 }
 .advantages__caption-4 {
@@ -1432,6 +1492,11 @@
   align-items: center;
   overflow: hidden;
 }
+@media screen and (max-width: 992px) {
+  .feedback {
+    margin-top: 95px;
+  }
+}
 .feedback__top-blur{
   position: absolute;
   top: 0%;
@@ -1444,11 +1509,40 @@
   filter: blur(250px);
   transform: rotate(5.78deg) translateX(-50%);
 }
+@media screen and (max-width: 992px) {
+  .feedback__top-blur {
+    top: 0%;
+    left: calc(50% - 150px);
+  }
+}
+.feedback__bottom-blur{
+  position: absolute;
+  top: 678px;
+  left: 1191px;
+  width: 337px;
+  height: 342px;
+  z-index: 2;
+  background: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%);
+  opacity: 0.3;
+  filter: blur(250px);
+  transform: rotate(5.78deg) translateX(-50%);
+}
+@media screen and (max-width: 992px) {
+  .feedback__bottom-blur {
+    top: 790px;
+    left: calc(50% + 230px);
+  }
+}
 .text_center {
   margin-top: 76px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media screen and (max-width: 830px) {
+  .text_center {
+    margin: 0 15px
+  }
 }
 .text__title_center {
   margin: 0;
@@ -1457,18 +1551,19 @@
   max-width: 580px;
   text-align: center;
 }
-.feedback__form {
-  width: 818px;
-  display: flex;
-  flex-direction: column;
-}
-.from {
+.form {
+  z-index: 4;
   width: 818px;
   margin-top: 82px;
   display: flex;
   flex-direction: column;
 }
-
+@media screen and (max-width: 830px) {
+  .form {
+    width: calc(100% - 30px);
+    margin: 49px 15px 0 15px;
+  }
+}
 .form__input {
   width: 100%;
   height: 83px;
@@ -1484,21 +1579,41 @@
   font-size: 18px;
   line-height: 25px;
 }
+
+@media screen and (max-width: 830px) {
+  .form__input {
+    height: 57px;
+    margin-bottom: 16px;
+    padding-left: 11px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
 .form__flex-inputs {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+
+@media screen and (max-width: 830px) {
+  .form__flex-inputs {
+    flex-direction: column;
+  }
+}
 .form__input_flex {
   width: calc(50% - 12px);
 }
-
+@media screen and (max-width: 830px) {
+  .form__input_flex {
+    width: 100%;
+  }
+}
 .form__textarea {
   width: 100%;
   min-height: 199px;
   resize: none;
   outline: none;
-  background: #FFFFFF;
+  background: rgb(255, 255, 255);
   border: 1px solid #5C5C5C;
   box-sizing: border-box;
   border-radius: 10px;
@@ -1508,6 +1623,14 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
+}
+@media screen and (max-width: 830px) {
+  .form__textarea {
+    min-height: 140px;
+    padding-left: 11px;
+    font-size: 16px;
+    line-height: 22px;
+  }
 }
 .form__submit { 
   margin: 60px auto 0 auto;
@@ -1524,8 +1647,22 @@
   font-size: 24px;
   line-height: 29px;
 }
-.feedback__download-caption {
-  margin-top: 91px;
+@media screen and (max-width: 830px) {
+  .form__submit  {    
+    width: 100%;
+    margin: 60px 0 0 0;
+  }
+}
+/* --Download----------------------------------------- */
+.download {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.download__caption {
+  margin: 91px 0 32px 0;
   font-family: 'Noto Sans';
   font-style: normal;
   font-weight: 700;
@@ -1533,14 +1670,8 @@
   line-height: 33px;
   letter-spacing: 0.03em;
 }
-
-.app-links_big {
-}
-.applinks__appstore {
-}
-.applinks__appstore_big {
-}
-.app-links__googleplay {
-}
-.app-links__googleplay_big {
+@media screen and (max-width: 830px) {
+  .form__caption  {    
+    margin: 74px 0 45px 0;
+  }
 }
