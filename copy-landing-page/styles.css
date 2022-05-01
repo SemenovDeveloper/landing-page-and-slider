@@ -441,12 +441,6 @@
   }
 }
 
-/* .home__stores {  
-  grid-area: stores;
-  margin-top: 34px;
-  max-width: 376px;
-  align-self: center; 
-} */
 /* --Partnership---------------------------------------------- */
 .partnership {
   width: 100%;
@@ -525,17 +519,16 @@
   }
 }
 
-
 .mission__iphone {
   position: relative;
   border-radius: 85px;
+  overflow: hidden;
   margin: 5px auto 115px;
   width: 498px;
   height: 999px;
   transform-origin: 0px 246px;
   transform: rotate(90deg);
 }
-
 
 @media screen and (max-width: 992px) {
   .mission__iphone {

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./slider/styles.css">
+  <title>Slider</title>
+</head>
+<body>
+  <div class="container">
+    <div class="slider">
+      <button class="slider__arrow slider__arrow_perv" onclick="pervImage()">
+        <img src="/slider/src/images/circle-arrow-left-solid.svg" alt="left arrow" />
+      </button>
+      <div class="slider__viewport">
+        <img src="/slider/src/images/image1.jpg" alt="" class="slider__image active" id="content1">
+        <img src="/slider/src/images/image2.jpg" alt="" class="slider__image" id="content2">
+        <img src="/slider/src/images/image3.jpg" alt="" class="slider__image" id="content3">
+        <img src="/slider/src/images/image4.jpg" alt="" class="slider__image" id="content4">
+        <img src="/slider/src/images/image5.jpg" alt="" class="slider__image" id="content5">
+        <img src="/slider/src/images/image6.jpg" alt="" class="slider__image" id="content6">
+        <img src="/slider/src/images/image7.jpg" alt="" class="slider__image" id="content7">
+        <img src="/slider/src/images/image8.jpg" alt="" class="slider__image" id="content8">
+        <img src="/slider/src/images/image9.jpg" alt="" class="slider__image" id="content9">
+        <img src="/slider/src/images/image10.jpg" alt="" class="slider__image" id="content10">
+      </div>
+      <button class="slider__arrow slider__arrow_next" onclick="nextImage()">
+        <img src="/slider/src/images/circle-arrow-right-solid.svg" alt="left arrow" />
+      </button>
+        <div class="slider__buttons-container">
+          <button class="slider__button"></button>
+          <button class="slider__button"></button>
+          <button class="slider__button"></button>
+          <button class="slider__button"></button>
+          <button class="slider__button"></button>
+          <button class="slider__button"></button>
+          <button class="slider__button"></button>
+          <button class="slider__button"></button>
+          <button class="slider__button"></button>
+          <button class="slider__button"></button>
+        </div>
+      </div>      
+    </div>
+  </div>
+  <script src="./slider/script.js"></script>
+</body>
+</html>
