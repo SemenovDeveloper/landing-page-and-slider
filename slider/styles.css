@@ -23,6 +23,7 @@
   grid-template-columns: 10% auto 10%;
   grid-template-rows: 80% 20%;
 }
+
 .slider__arrow {
   position: relative;
   display: inline-block;
@@ -63,7 +64,7 @@
 .slider__arrow_next {
   grid-area: right-arrow;
 }
-.slider__buttons-container {
+.slider__dot-buttons-container {
   grid-area: radiobuttons;
   width: 300px;
   margin: 20px auto 0 auto;
@@ -85,10 +86,11 @@
   object-fit: cover;
   display: none;
 }
-.active {
+.slider__image_active {
   display: block;
 }
-.slider__button {
+
+.slider__dot-button {
   width: 15px;
   height: 15px;
   outline: none;
@@ -96,3 +98,4 @@
   border-radius: 50%;
   border: 2px solid #78A1BB;
 }
+
