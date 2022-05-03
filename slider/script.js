@@ -50,10 +50,14 @@ const images = [
     alt: "Monochrome Sky"
   }
 ];
-let imageIndex = 0;
-const imagesQuantity = images.length;
 
-window.onload = init();
+let imageIndex = 0;
+let width;
+const imagesQuantity = images.length;
+let isSliding = false;
+
+
+init();
 function init() {
   images.forEach((image, index) => {
     imgCreate(image.src, image.alt, image.id, index);
@@ -83,30 +87,81 @@ function buttonCreate(index) {
 }
 
 function changeSlide (evt) {
-  imageIndex = Number(evt.target.value);
-  const slides = document.querySelectorAll(".slider__image");  
-  slides.forEach( slide => {
-    slide.classList.remove("slider__image_active");
-  })
-  document.getElementById("content" + imageIndex).classList.add("slider__image_active");
-  activeSlideButton(imageIndex);
-  console.log(imageIndex);
+  if(isSliding || imageIndex == evt.target.value) {
+    return
+  } else {
+    let pervImageIndex = imageIndex;
+    imageIndex = Number(evt.target.value);
+    const pervImage = document.getElementById("content" + pervImageIndex);
+    const nextImage = document.getElementById("content" + imageIndex);
+    activeSlideButton (imageIndex);
+    if(imageIndex > pervImageIndex ) {
+      slideToLeft(pervImage, nextImage);
+    } else {
+      slideToRight(pervImage, nextImage);
+    }
+  }
 }
 
-function pervImage () {
-  document.getElementById("content" + (imageIndex )).classList.remove("slider__image_active"); 
-  imageIndex = (imageIndex + imagesQuantity - 1) % imagesQuantity;
-  document.getElementById("content" + (imageIndex)).classList.add("slider__image_active");
-  activeSlideButton (imageIndex);
-  console.log(imageIndex);
+
+function slideToLeft(pervImage, nextImage) {
+  isSliding = true;
+  let i = 1;
+  nextImage.classList.add("slider__image_active");    
+  nextImage.style.transform = "translateX(100%)";
+  pervImage.classList.add("slider__image_active");
+  let startSliding = setInterval(function () {
+    i++;
+    pervImage.style.transform = "translateX(-" + i + "%)";
+    nextImage.style.transform = "translateX(calc(100% - " + i + "%))";
+    if (i >= 100) {
+      clearInterval(startSliding);
+      isSliding = false;
+      pervImage.classList.remove("slider__image_active");
+    }
+  }, 10)
 }
 
-function nextImage() { 
-  document.getElementById("content" + (imageIndex)).classList.remove("slider__image_active");
-  imageIndex = (imageIndex+1)%imagesQuantity;
-  document.getElementById("content" + (imageIndex)).classList.add("slider__image_active");
-  activeSlideButton (imageIndex);
-  console.log(imageIndex, imagesQuantity);
+function slideToRight(pervImage, nextImage) {
+  isSliding = true;
+  let i = 1;
+  nextImage.classList.add("slider__image_active");    
+  nextImage.style.transform = "translateX(-100%)";
+  pervImage.classList.add("slider__image_active");
+  let startSliding = setInterval(function () {
+    i++;
+    pervImage.style.transform = "translateX(" + i + "%)";
+    nextImage.style.transform = "translateX(calc(-100% + " + i + "%))";
+    if (i >= 100) {
+      clearInterval(startSliding);
+      isSliding = false;
+      pervImage.classList.remove("slider__image_active");
+    }
+  }, 10)
+}
+
+function nextSlide() {
+  if(isSliding) {
+    return
+  } else {
+    const pervImage = document.getElementById("content" + imageIndex);
+    const nextImage = document.getElementById("content" + (imageIndex+1)%imagesQuantity);
+    imageIndex = (imageIndex+1)%imagesQuantity;
+    activeSlideButton (imageIndex);
+    slideToLeft(pervImage, nextImage);
+  }
+}
+
+function pervSlide () {
+  if(isSliding) {
+    return
+  } else {
+    const pervImage = document.getElementById("content" + imageIndex);
+    const nextImage = document.getElementById("content" + ((imagesQuantity+imageIndex-1)%imagesQuantity));
+    imageIndex = (imagesQuantity + imageIndex - 1)%imagesQuantity;
+    activeSlideButton (imageIndex);
+    slideToRight(pervImage, nextImage);
+  }
 }
 
 function activeSlideButton (index) {
@@ -116,5 +171,3 @@ function activeSlideButton (index) {
   });
   document.getElementById("button" + index ).style.backgroundColor = "#283044"
 }
-
-

@@ -42,7 +42,8 @@
   align-self: center;
   justify-self: center;
   grid-area: left-arrow;
-  }
+}
+
 .slider__arrow:hover {background-color: #283044}
 
 .slider__arrow:active {
@@ -74,7 +75,7 @@
 }
 .slider__viewport{
   width: 980px;
-  height: 600px;
+  height: 550px;
   align-self: center;
   justify-self: center;
   grid-area: viewport;
@@ -83,10 +84,12 @@
   border-radius: 10px;
 }
 .slider__image {
-  object-fit: cover;
+  width: 100%;
   display: none;
 }
 .slider__image_active {
+  position: absolute;
+  top:0%;
   display: block;
 }
 
