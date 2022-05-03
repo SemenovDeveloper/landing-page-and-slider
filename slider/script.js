@@ -56,8 +56,6 @@ let width;
 const imagesQuantity = images.length;
 let isSliding = false;
 
-
-init();
 function init() {
   images.forEach((image, index) => {
     imgCreate(image.src, image.alt, image.id, index);
@@ -65,14 +63,17 @@ function init() {
   })
 };
 
+init();
+
 function imgCreate(src, alt, id, index) {
-  let img = document.createElement('img');
+  const img = document.createElement('img');
+  const imageViewport = document.getElementById('viewport');
   img.src = src;
   img.id = id;
   img.className = "slider__image";
   if (alt != null ) img.alt = alt;
   if (index === 0) img.classList.add("slider__image_active")
-  document.getElementById('viewport').appendChild(img);
+  imageViewport.appendChild(img);
 }
 
 function buttonCreate(index) {
@@ -103,6 +104,29 @@ function changeSlide (evt) {
   }
 }
 
+function nextSlide() {
+  if(isSliding) {
+    return
+  } else {
+    const pervImage = document.getElementById("content" + imageIndex);
+    const nextImage = document.getElementById("content" + (imageIndex+1)%imagesQuantity);
+    imageIndex = (imageIndex+1)%imagesQuantity;
+    activeSlideButton (imageIndex);
+    slideToLeft(pervImage, nextImage);
+  }
+}
+
+function pervSlide () {
+  if(isSliding) {
+    return
+  } else {
+    const pervImage = document.getElementById("content" + imageIndex);
+    const nextImage = document.getElementById("content" + ((imagesQuantity+imageIndex-1)%imagesQuantity));
+    imageIndex = (imagesQuantity + imageIndex - 1)%imagesQuantity;
+    activeSlideButton (imageIndex);
+    slideToRight(pervImage, nextImage);
+  }
+}
 
 function slideToLeft(pervImage, nextImage) {
   isSliding = true;
@@ -138,30 +162,6 @@ function slideToRight(pervImage, nextImage) {
       pervImage.classList.remove("slider__image_active");
     }
   }, 10)
-}
-
-function nextSlide() {
-  if(isSliding) {
-    return
-  } else {
-    const pervImage = document.getElementById("content" + imageIndex);
-    const nextImage = document.getElementById("content" + (imageIndex+1)%imagesQuantity);
-    imageIndex = (imageIndex+1)%imagesQuantity;
-    activeSlideButton (imageIndex);
-    slideToLeft(pervImage, nextImage);
-  }
-}
-
-function pervSlide () {
-  if(isSliding) {
-    return
-  } else {
-    const pervImage = document.getElementById("content" + imageIndex);
-    const nextImage = document.getElementById("content" + ((imagesQuantity+imageIndex-1)%imagesQuantity));
-    imageIndex = (imagesQuantity + imageIndex - 1)%imagesQuantity;
-    activeSlideButton (imageIndex);
-    slideToRight(pervImage, nextImage);
-  }
 }
 
 function activeSlideButton (index) {

@@ -11,8 +11,10 @@
 }
 
 .slider {
-  min-width: 1230px;
-  min-height: 800px;
+  width: 80vw;
+  height: 70vh;
+  min-width: 500px;
+  min-height: 300px;
   background-color: #ffffff;
   border-radius: 5px;
   box-shadow: 0 15px 30px #000000;
@@ -21,7 +23,7 @@
   "left-arrow viewport right-arrow"
   "radiobuttons radiobuttons radiobuttons";
   grid-template-columns: 10% auto 10%;
-  grid-template-rows: 80% 20%;
+  grid-template-rows: 90% 10%;
 }
 
 .slider__arrow {
@@ -74,8 +76,8 @@
   justify-content: space-around;
 }
 .slider__viewport{
-  width: 980px;
-  height: 550px;
+  width: 100%;
+  height: 80%;
   align-self: center;
   justify-self: center;
   grid-area: viewport;
@@ -85,6 +87,8 @@
 }
 .slider__image {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
   display: none;
 }
 .slider__image_active {
