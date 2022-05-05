@@ -1,0 +1,4 @@
+.text {
+  z-index: 5;
+  grid-area: text;
+}

@@ -1,0 +1,12 @@
+.applinks__appstore_big {
+  width: 259px;
+  height: 82px;
+  margin: 0;
+}
+@media screen and (max-width: 767px) {
+  .applinks__appstore_big {
+    width: 185px;
+    height: 60px;
+    margin: 0;
+  }
+}

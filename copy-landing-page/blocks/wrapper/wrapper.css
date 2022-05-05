@@ -1,0 +1,6 @@
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  background-color: #000000;
+  box-sizing: border-box;
+}

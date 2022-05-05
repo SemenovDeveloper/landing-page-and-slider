@@ -1,49 +1,45 @@
 @import url("./generic/normalize.css");
 @import url("./generic/fonts.css");
-/* @import url("./blocks/container/container.css");
-@import url("./blocks/app-links/__link/app-links__link.css");
-@import url("./blocks/app-links/__appstore/stores__appstore.css");
-@import url("./blocks/app-links/__googleplay/stores__googleplay.css");
-@import url("/copy-landing-page/blocks/app-links/app-links.css");
 
-@import url("./blocks/header/header.css");
-@import url("./blocks/header/__login-logo/header__login-logo.css");
-@import url("./blocks/header/__login/header__login.css");
-@import url("./blocks/header/__name/header__name.css");
-@import url("./blocks/header/__notab-logo/header__hotab-logo.css");
-@import url("./blocks/header/__notab/header__notab.css");
-@import url("./blocks/header/__login-link/header__login-link.css");
+@import url("./blocks/wrapper/wrapper.css");
+@import url("./blocks/container/container.css");
 
-@import url("./blocks/home/home.css");
-@import url("./blocks/home/__header/home__header.css");
-@import url("./blocks/home/__round-blur/home__round-blur.css");
-@import url("./blocks/home/__line/home__line.css");
-@import url("./blocks/home/__description/home__description.css");
-@import url("./blocks/home/__iphone/home__iphone.css");
-@import url("./blocks/home/__wrong-shape-blur/home__wrong-shape-blur.css");
-@import url("./blocks/home/__download/home__download.css");
-@import url("./blocks/home/__stores/home__stores.css"); */
+@import url("./blocks/text/text.css");
+@import url("./blocks/text/text__title/text__title.css");
+@import url("./blocks/text/text__subtitle/text__subtitle.css");
 
-.wrapper {
+@import url("./blocks/app-links/app-links.css");
+@import url("./blocks/app-links/app-links_at-home.css");
+@import url("./blocks/app-links/app-links_big.css");
+@import url("./blocks/app-links/app-links__appstore/app-links__appstore.css");
+@import url("./blocks/app-links/app-links__appstore/app-links__appstore_big.css");
+@import url("./blocks/app-links/app-links__googleplay/app-links__gogleplay.css");
+@import url("./blocks/app-links/app-links__googleplay/app-links__googleplay_big.css");
+
+
+
+
+
+/* .wrapper {
   min-height: 100%;
   overflow: hidden;
   background-color: #000000;
   box-sizing: border-box;
-}
+} */
 
-.container {
+/* .container {
   max-width: 1440px;
   margin: 0 auto;
   background-color: #000000;
   color: #ffffff;
   overflow: hidden;
-}
+} */
 /* --COMMON---------------------------------------------------------- */
-.text {
+/* .text {
   z-index: 5;
   grid-area: text;
-}
-.text__title {
+} */
+/* .text__title {
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
@@ -56,9 +52,9 @@
     font-size: 24px;
     line-height: 29px;
   }
-}
+} */
 
-.text__subtitle {
+/* .text__subtitle {
   font-family: "Noto Sans";
   font-style: normal;
   font-weight: 400;
@@ -74,9 +70,9 @@
     font-size: 16px;
     line-height: 22px;
   }
-}
+} */
 
-.app-links {
+/* .app-links {
   grid-area: stores;
   display: flex;
   z-index: 5;
@@ -93,8 +89,8 @@
     font-size: 16px;
     line-height: 22px;
   }
-}
-.app-links_at-home{
+} */
+/* .app-links_at-home{
   z-index: 5;
   align-self: center;
   justify-self: center;
@@ -115,9 +111,9 @@
     font-size: 16px;
     line-height: 22px;
   }
-}
+} */
 
-.app-links__appstore {
+/* .app-links__appstore {
   width: 164px;
   height: 52px;
   margin: 0 24px;
@@ -136,8 +132,8 @@
     width: 185px;
     height: 60px;
   }
-}
-.applinks__appstore_big {
+} */
+/* .applinks__appstore_big {
   width: 259px;
   height: 82px;
   margin: 0;
@@ -148,9 +144,9 @@
     height: 60px;
     margin: 0;
   }
-}
+} */
 
-.app-links__googleplay {
+/* .app-links__googleplay {
   width: 184.5px;
   height: 51.33px;
   margin: 0 24px;
@@ -170,8 +166,8 @@
     width: 185px;
     height: 60px;
   }
-}
-.app-links__googleplay_big {
+} */
+/* .app-links__googleplay_big {
   width: 293px;
   height: 82px;
   margin: 0;
@@ -182,7 +178,7 @@
     width: 185px;
     height: 60px;
   }
-}
+} */
 
 /* --header------------------------------------ */
 .header {

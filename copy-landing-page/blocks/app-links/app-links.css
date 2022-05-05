@@ -1,0 +1,18 @@
+.app-links {
+  grid-area: stores;
+  display: flex;
+  z-index: 5;
+}
+.app-links a:hover {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 479px) {
+  .app-links {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}

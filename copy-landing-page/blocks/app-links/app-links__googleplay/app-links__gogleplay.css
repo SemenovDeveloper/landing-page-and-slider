@@ -1,0 +1,19 @@
+.app-links__googleplay {
+  width: 184.5px;
+  height: 51.33px;
+  margin: 0 24px;
+}
+
+@media screen and (max-width: 992px) {
+  .app-links__googleplay {
+    width: 185px;
+    height: 60px;
+    margin: 0 5px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .app-links__googleplay {
+    margin: 24px;
+  }
+}

@@ -1,0 +1,17 @@
+.text__subtitle {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  margin-top: 23px;
+  font-size: 18px;
+  line-height: 25px;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+  .text__subtitle {
+    margin-top: 24px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}

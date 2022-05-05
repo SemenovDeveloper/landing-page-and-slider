@@ -1,0 +1,20 @@
+.app-links__appstore {
+  width: 164px;
+  height: 52px;
+  margin: 0 24px;
+}
+
+@media screen and (max-width: 992px) {
+  .app-links__appstore {
+    width: 185px;
+    height: 60px;
+    margin: 0 5px;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .app-links__appstore {
+    width: 185px;
+    height: 60px;
+  }
+}
