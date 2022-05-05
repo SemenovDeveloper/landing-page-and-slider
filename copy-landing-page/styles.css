@@ -67,6 +67,7 @@
   line-height: 25px;
   color: #ffffff;
 }
+
 @media screen and (max-width: 767px) {
   .text__subtitle {
     margin-top: 24px;
@@ -79,6 +80,9 @@
   grid-area: stores;
   display: flex;
   z-index: 5;
+}
+.app-links a:hover {
+  opacity: 0.5;
 }
 
 @media screen and (max-width: 479px) {
@@ -118,7 +122,6 @@
   height: 52px;
   margin: 0 24px;
 }
-
 
 @media screen and (max-width: 992px) {
   .app-links__appstore {
@@ -242,6 +245,9 @@
   display: flex;
   align-items: center;
   margin: 18px 0 0 108px;
+}
+.header__login:hover {
+  opacity: 0.5;
 }
 
 @media screen and (max-width: 992px) {
@@ -498,6 +504,10 @@
   margin: 0px 55px;
 }
 
+.contact__link:hover {
+  opacity: 0.5;
+}
+
 @media screen and (max-width: 767px) {
   .contact__link {
     font-size: 18px;
@@ -541,7 +551,7 @@
   }
 }
 
-.mission__iphone:hover {
+.mission__iphone_rotate {
   transform: rotate(0deg);
   transition: all 2s linear;
 }
@@ -555,7 +565,7 @@
   object-fit: cover;
 }
 
-.misson__text {
+.mission__text {
   z-index: 5;
   width: 358px;
   height: 322px;
@@ -566,7 +576,7 @@
 }
 
 @media screen and (max-width: 992px) {
-  .misson__text {
+  .mission__text {
     position: static;
     width: auto;
     height: auto;
@@ -576,7 +586,7 @@
   }
 }
 
-.misson__text:hover {
+.mission__text_slide-out{
   left: 100%;
 }
 
@@ -1608,28 +1618,15 @@
     width: 100%;
   }
 }
-.form__textarea {
-  width: 100%;
+
+.form__input_textarea {
   min-height: 199px;
-  resize: none;
-  outline: none;
-  background: rgb(255, 255, 255);
-  border: 1px solid #5C5C5C;
-  box-sizing: border-box;
-  border-radius: 10px;
   padding: 29px 23px;
-  font-family: 'Noto Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 25px;
 }
+
 @media screen and (max-width: 830px) {
-  .form__textarea {
+  .form__input_textarea {
     min-height: 140px;
-    padding-left: 11px;
-    font-size: 16px;
-    line-height: 22px;
   }
 }
 .form__submit { 
@@ -1647,6 +1644,15 @@
   font-size: 24px;
   line-height: 29px;
 }
+
+.form__submit:hover {
+  opacity: 0.5;
+}
+
+.form__input_error {
+  border: 2px solid #FF0000;
+}
+
 @media screen and (max-width: 830px) {
   .form__submit  {    
     width: 100%;
@@ -1743,6 +1749,10 @@
   text-decoration: none;
   color: #FFFFFF;
 }
+.footer__contact a:hover {
+  opacity: 0.5;
+}
+
 .footer__copyright {
   font-family: 'Avenir';
   font-style: normal;
@@ -1767,6 +1777,10 @@
   line-height: 25px;
   margin-bottom: 25px;
 }
+.footer__link:hover {
+  opacity: 0.5;
+}
+
 @media screen and (max-width: 767px) {
   .footer__link {   
     flex-direction: column;
@@ -1774,6 +1788,8 @@
     margin-bottom: 14px;
   }
 }
+
+
 .footer__documents {
   margin-top: 150px;
   display: flex;

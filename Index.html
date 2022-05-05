@@ -80,8 +80,8 @@
               <a class="contact__link" href="#">Login</a>
             </div>
           </section>
-          <section class="mission">
-            <div class="misson__text text">
+          <section class="mission" id="mission">
+            <div class="mission__text text" id="mission-description">
               <div class="mission__round-blur"></div>
               <h2 class="text__title text__title_atmission">Our mission and vision</h2>
               <p class="text__subtitle text__subtitle_atmission">
@@ -89,7 +89,7 @@
                 our customers to ensure your everyday problems are solved through simplistic tools. And as your business grows, we’ll grow right alongside with you. 
               </p>
             </div>
-            <div class="mission__iphone">
+            <div class="mission__iphone" id="mission-iphone">
               <picture>
                 <source srcset="./copy-landing-page/img/iphone-mission-mobile.png" media="(max-width: 767px)" type="image/webp">              
                 <source srcset="./copy-landing-page/img/iphone-missionwebp.webp" type="image/webp">
@@ -314,16 +314,16 @@
                 Have questions about Noble or just want to say hello? Drop us a line and a member of our team will getback to you shortly.
               </p>
             </div>
-            <form class="form" action="#" method="post" enctype="multipart/form-data">
+            <form class="form" action="#" method="post" enctype="multipart/form-data" id="form">
               <input class="form__input" type="text" name="name" value="" placeholder="Name"/>
               <input class="form__input" type="text" name="venue-name" value="" placeholder="Venue Name"/>
               <div class="form__flex-inputs">
                 <input class="form__input form__input_flex" type="text" name="venue-city" value="" placeholder="Venue City"/>
-                <input class="form__input form__input_flex" type="text" name="state-city" value="" placeholder="State City"/>
+                <input class="form__input form__input_flex" type="text" name="state-city" value="" placeholder="State City">
               </div>
               <input class="form__input" type="text" name="email" value="" placeholder="Email"/>
               <input class="form__input" type="text" name="subject" value="" placeholder="Subject"/>
-              <textarea class="form__textarea" name="message" placeholder="Message"></textarea>
+              <textarea class="form__input form__input_textarea" name="message" placeholder="Message"></textarea>
               <button class="form__submit" type="submit">Send</button>
             </form>    
           </section>

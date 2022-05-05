@@ -91,7 +91,7 @@ function changeSlide (evt) {
   if(isSliding || imageIndex == evt.target.value) {
     return
   } else {
-    let pervImageIndex = imageIndex;
+    const pervImageIndex = imageIndex;
     imageIndex = Number(evt.target.value);
     const pervImage = document.getElementById("content" + pervImageIndex);
     const nextImage = document.getElementById("content" + imageIndex);

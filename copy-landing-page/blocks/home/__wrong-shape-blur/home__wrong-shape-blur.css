@@ -1,8 +1,0 @@
-.home__wrong-shape-blur {
-  width: 662px;
-  height: 783px;
-  background-image: url(wrong-shape-blur.png);
-  background: rgba(250, 0, 255, 0.2);
-  filter: blur(250px);
-  transform: rotate(-105.26deg);
-}
