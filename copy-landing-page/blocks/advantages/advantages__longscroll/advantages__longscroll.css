@@ -1,0 +1,12 @@
+.advantages__longscroll {
+  position: relative;
+  width: 868px;
+  height: 1038px;
+}
+@media screen and (max-width: 992px) {
+  .advantages__longscroll {
+    margin-top: 145px;
+    width: 360px;
+    height: 430px;
+  }
+}

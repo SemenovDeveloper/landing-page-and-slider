@@ -1,0 +1,17 @@
+.cookies {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  min-height: 93px;
+  z-index: 6;
+  background: #212834;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  animation-name: slideup;
+  animation-duration: 3s;
+}
+@keyframes slideup {
+  0%   {top: 100vh}
+  100% {top: calc(100vh - 93px)}
+}

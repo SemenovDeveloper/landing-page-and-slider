@@ -1,0 +1,11 @@
+.form__flex-inputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 830px) {
+  .form__flex-inputs {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,12 @@
+.footer_blur {
+  position: absolute;
+  top: 56px;
+  left: calc(50%-330px);
+  z-index: 0;
+  width: 406px;
+  height: 412px;
+  background: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%);
+  opacity: 0.3;
+  filter: blur(138px);
+  transform: rotate(5.78deg) translateX(-50%);
+}

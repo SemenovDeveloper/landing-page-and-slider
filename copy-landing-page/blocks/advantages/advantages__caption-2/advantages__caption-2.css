@@ -1,0 +1,34 @@
+.advantages__caption-2 {
+  position: absolute;
+  width: 267px;
+  height: 99px;
+  background: #000000;
+  border: 0.75px solid rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  border-radius: 18px;
+  top: 204px;
+  left: 475px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+  padding: 23px 22px;
+}
+@media screen and (max-width: 992px) {
+  .advantages__caption-2 {
+    width: 171px;
+    height: 62px;
+    font-size: 14px;
+    line-height: 16px;
+    top: 19px;
+    left: 191px;
+    padding: 15px 16px;
+    border-radius: 10px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .advantages__caption-2 {
+    left: 165px;
+  }
+}

@@ -1,0 +1,11 @@
+.feedback__bottom-blur{
+  position: absolute;
+  top: 678px;
+  left: 1191px;
+  width: 337px;
+  height: 342px;
+  background: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%);
+  opacity: 0.3;
+  filter: blur(138px);
+  transform: rotate(5.78deg) translateX(-50%);
+}

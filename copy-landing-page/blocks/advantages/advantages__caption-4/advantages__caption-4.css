@@ -1,0 +1,29 @@
+.advantages__caption-4 {
+  position: absolute;
+  width: 176px;
+  height: 65px;
+  background: #000000;
+  border: 0.75px solid rgba(255, 255, 255, 0.5);
+  box-sizing: border-box;
+  border-radius: 18px;
+  top: 730px;
+  left: 198px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 27px;
+  padding: 19px 25px;
+}
+@media screen and (max-width: 992px) {
+  .advantages__caption-4 {
+    width: 107px;
+    height: 43px;
+    font-size: 14px;
+    line-height: 16px;
+    top: 341px;
+    left: 32px;
+    padding: 14px 13px;
+    border-radius: 10px;
+  }
+}

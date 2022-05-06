@@ -1,0 +1,8 @@
+.notab__background {
+  z-index: 1;
+  position: absolute;
+  width: 1440px;
+  height: 1106px;
+  left: 50%;
+  transform: translateX(-50%);
+}

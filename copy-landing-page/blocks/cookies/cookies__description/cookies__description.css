@@ -1,0 +1,25 @@
+.cookies__description {  
+  font-family: 'Noto Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #FFFFFF;
+}
+@media screen and (min-width: 1440px) {
+  .cookies__description  {
+    margin-left: calc(50% - 720px + 100px);    
+  }
+}
+@media screen and (max-width: 1440px) {
+  .cookies__description  {
+    margin-left: 100px;    
+  }
+}
+@media screen and (max-width: 992px) {
+  .cookies__description  {
+    margin-left: 15px; 
+    font-size: 12px;
+    line-height: 16px;
+  }
+}

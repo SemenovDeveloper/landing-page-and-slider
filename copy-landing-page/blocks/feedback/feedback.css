@@ -1,0 +1,14 @@
+.feedback {
+  position: relative;
+  max-width: 1440px;
+  display: flex;
+  margin-top: -116px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 992px) {
+  .feedback {
+    margin-top: 95px;
+  }
+}

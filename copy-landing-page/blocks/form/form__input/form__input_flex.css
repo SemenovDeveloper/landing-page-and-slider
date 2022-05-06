@@ -1,0 +1,8 @@
+.form__input_flex {
+  width: calc(50% - 12px);
+}
+@media screen and (max-width: 830px) {
+  .form__input_flex {
+    width: 100%;
+  }
+}

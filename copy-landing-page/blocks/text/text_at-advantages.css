@@ -1,0 +1,14 @@
+.text_at_advantage {
+  margin: 192px 0 0 55%;  
+}
+@media screen and (max-width: 992px) {
+  .text_at_advantage {
+    margin: 116px 30px 0 30px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .text_at_advantage {
+    width: calc(100% - 30px);
+    margin: 116px 15px 0 15px;
+  }
+}
