@@ -1,0 +1,15 @@
+.bi-tool__graph-wrapper{
+  position: relative;
+  width: 743px;
+  height: 520px;
+  margin: 205px 100px 0 0;
+}
+@media screen and (max-width: 767px) {
+  .bi-tool__graph-wrapper {
+    width: 543px;
+    height: 281px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 30px;
+  }
+} 

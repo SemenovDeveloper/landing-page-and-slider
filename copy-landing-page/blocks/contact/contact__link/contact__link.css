@@ -1,0 +1,21 @@
+.contact__link {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 33px;
+  color: #ffffff;
+  margin: 0px 55px;
+}
+
+.contact__link:hover {
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 767px) {
+  .contact__link {
+    font-size: 18px;
+    line-height: 25px;
+    margin: 0px 54px 40px 33px;
+  }
+}

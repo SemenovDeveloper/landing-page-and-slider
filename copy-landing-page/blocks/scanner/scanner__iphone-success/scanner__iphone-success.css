@@ -1,0 +1,19 @@
+.scanner__iphone-success {  
+  width: 333x;
+  height: 667px;
+  z-index: 3;
+  grid-area: success;
+  margin: 467px 0px 0px 50px;
+}
+@media screen and (max-width: 1260px) {
+  .scanner__iphone-success {
+    margin: 70px auto 0px;
+  }
+}
+@media screen and (max-width: 454px) {
+  .scanner__iphone-success {
+    margin-top: 55px;
+    width: 287px;
+    height: 576px;
+  }
+}

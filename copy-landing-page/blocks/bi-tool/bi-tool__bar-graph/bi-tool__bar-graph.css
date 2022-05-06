@@ -1,0 +1,13 @@
+.bi-tool__bar-graph {
+  position: absolute;
+  margin: 393px 0 0 207px;
+  width: 194px;
+  height: 118px;
+}
+@media screen and (max-width: 767px) {
+  .bi-tool__bar-graph {
+    margin: 49px 0 0 293px;
+    width: 91px;
+    height: 55px;
+  }
+}

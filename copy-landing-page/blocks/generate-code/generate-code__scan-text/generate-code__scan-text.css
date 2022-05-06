@@ -1,0 +1,29 @@
+.generate-code__scan-text {
+  position: absolute;
+  min-width: 150px;
+  top: 415px;
+  left: calc(50% + 357px);
+  transform: translateX(-50%); 
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px; 
+  z-index: 4;
+}
+@media screen and (max-width: 767px) {
+  .generate-code__scan-text { 
+    top: 700px;
+    left: calc(50% + 112px);
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+@media screen and (max-width: 380px) {
+  .generate-code__scan-text { 
+    top: 700px;
+    left: calc(50% + 90px);
+    font-size: 18px;
+    line-height: 22px;
+  }
+}

@@ -1,0 +1,15 @@
+.generate-code__notab {
+  position: absolute;
+  width: 100vw;
+  height: auto;
+  top: 255px;
+  left: 50%;  
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+@media screen and (max-width: 767px) {
+  .generate-code__notab { 
+    top: 422px
+  }
+}

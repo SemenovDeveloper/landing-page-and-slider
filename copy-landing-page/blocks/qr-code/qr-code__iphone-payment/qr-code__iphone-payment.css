@@ -1,0 +1,14 @@
+.qr-code__iphone-payment {
+  z-index: 4;
+  grid-area: iphone-1;
+  width: 333px;
+  height: 667px;  
+}
+@media screen and (max-width: 560px) {
+  .qr-code__iphone-payment{ 
+    margin-top: 220px; 
+    width: 280.98px;
+    height: 563.68px;
+    justify-self: center;    
+  }
+}

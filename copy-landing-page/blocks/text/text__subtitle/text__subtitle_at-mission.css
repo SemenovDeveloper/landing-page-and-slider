@@ -1,0 +1,11 @@
+.text__subtitle_atmission {
+  margin-top: 23px;
+  font-size: 18px;
+  line-height: 25px;
+}
+@media screen and (max-width: 992px) {
+  .text__subtitle_atmission {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}

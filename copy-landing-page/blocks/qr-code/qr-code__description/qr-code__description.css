@@ -1,0 +1,21 @@
+.qr-code__description {
+  grid-area: description;
+  display: flex;
+  flex-direction: column;
+  margin-left: 195px;
+}
+@media screen and (max-width: 1300px) {
+  .qr-code__description{
+    margin-left: 100px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .qr-code__description{
+    margin-left: 15px;
+  }
+}
+@media screen and (max-width: 560px) {
+  .qr-code__description{
+    margin: 221px 15px 0 15px;
+  }
+}

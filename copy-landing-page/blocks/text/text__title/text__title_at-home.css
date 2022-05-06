@@ -1,0 +1,12 @@
+.text__title_athome {
+  font-size: 64px;
+  line-height: 70px;
+  color: #ffffff;  
+}
+
+@media screen and (max-width: 767px) {
+  .text__title_athome {
+    font-size: 35px;
+    line-height: 40px;
+  }
+}

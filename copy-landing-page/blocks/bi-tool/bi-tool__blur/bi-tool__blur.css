@@ -1,0 +1,16 @@
+.bi-tool__blur{
+  position: absolute;
+  top: -190px;
+  left: -211px;
+  width: 426px;
+  height: 438px;
+  background: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%);
+  opacity: 0.1;
+  filter: blur(250px);
+  transform: rotate(5.78deg);
+}
+@media screen and (max-width: 767px) {
+  .bi-tool__blur {
+    display: none;
+  }
+}

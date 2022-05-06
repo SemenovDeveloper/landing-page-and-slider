@@ -1,0 +1,15 @@
+.qr-code__iphone-coocking {
+  margin-top: 10px;
+  z-index: 4;
+  grid-area: iphone-2;
+  width: 333px;
+  height: 667px;  
+}
+@media screen and (max-width: 560px) {
+  .qr-code__iphone-coocking{
+    margin-top: 50px;
+    width: 280.98px;
+    height: 563.68px;  
+    justify-self: center; 
+  }
+}

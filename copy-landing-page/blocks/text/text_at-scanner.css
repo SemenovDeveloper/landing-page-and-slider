@@ -1,0 +1,22 @@
+.text_at_scanner {
+  z-index: 3;
+  grid-area: text-scanner;
+  margin: 854px 0px 0px 129px;
+  max-width: 316px;
+}
+@media screen and (max-width: 1260px) {
+  .text_at_scanner {
+    grid-area: text-scanner;
+    margin: 100px 100px 0px 100px;
+    max-width: 815px;
+  }
+}
+@media screen and (max-width: 454px) {
+  .text_at_scanner {
+    margin: 234px 15px 0;
+  }
+}
+
+.text__subtitle_at_scanner {
+  max-width: 316px;
+}

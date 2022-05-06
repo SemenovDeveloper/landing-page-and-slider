@@ -1,0 +1,13 @@
+.bi-tool__sector-graph {
+  position: absolute;
+  margin: 183px 0 0 157px;
+  width: 233x;
+  height: 45px;
+}
+@media screen and (max-width: 767px) {
+  .bi-tool__sector-graph {
+    margin: 43px 0 0 120px;
+    width: 109px;
+    height: 21px;
+  }
+}

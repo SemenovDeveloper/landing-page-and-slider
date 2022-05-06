@@ -1,0 +1,18 @@
+.home__iphone {
+  width: 333px;
+  height: 668px;
+  z-index: 2;
+  grid-area: iphone;
+  border-radius: 50px;
+  overflow: hidden;
+  margin: 29px auto 83px auto;  
+}
+
+@media screen and (max-width: 767px) {
+  .home__iphone {
+    border-radius: 15px;
+    margin: 65px auto 55px auto;
+    width: 161px;
+    height: 323px;
+  }
+}

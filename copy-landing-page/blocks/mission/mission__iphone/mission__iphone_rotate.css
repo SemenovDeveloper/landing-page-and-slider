@@ -1,0 +1,4 @@
+.mission__iphone_rotate {
+  transform: rotate(0deg);
+  transition: all 2s linear;
+}

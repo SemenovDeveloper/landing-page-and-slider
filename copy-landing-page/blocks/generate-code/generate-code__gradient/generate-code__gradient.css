@@ -1,0 +1,23 @@
+.generate-code__gradient {  
+  position: absolute;
+  width: 1022px;
+  height: 952px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-0.55deg);
+  z-index: 2;
+  background: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%);
+  opacity: 0.15;
+  filter: blur(312px);
+  border-radius: 476.034px;
+}
+@media screen and (max-width: 767px) {
+  .generate-code__gradient { 
+    width: 306px;
+    height: 285px;
+    top: 349px;
+    background: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%);
+    opacity: 0.15;
+    filter: blur(94px);
+    border-radius: 142.636px;
+  }
+}

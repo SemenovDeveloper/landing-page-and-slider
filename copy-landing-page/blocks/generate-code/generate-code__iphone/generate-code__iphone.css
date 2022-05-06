@@ -1,0 +1,16 @@
+.generate-code__iphone { 
+  position: absolute;
+  top: 147px;
+  left: 50%;
+  transform: translateX(-50%); 
+  width: 333px;
+  height: 667px;  
+  z-index: 4;
+}
+@media screen and (max-width: 767px) {
+  .generate-code__iphone {
+    width: 182px;
+    height: 364px;
+    top: 297px
+  }
+}

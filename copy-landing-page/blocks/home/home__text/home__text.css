@@ -1,0 +1,10 @@
+.home__text {
+  z-index: 2;
+  margin: 143px 0 0 100px;
+}
+
+@media screen and (max-width: 992px) {
+  .home__text {
+    margin: 98px 15px 0 15px;
+  }
+}

@@ -1,0 +1,13 @@
+.bi-tool__round-graph {
+  position: absolute;
+  margin: 182px 0 0 461px;
+  width: 182px;
+  height: 193px;
+}
+@media screen and (max-width: 767px) {
+  .bi-tool__round-graph {
+    margin: 0px 0 0 383px;
+    width: 86px;
+    height: 91px;
+  }
+}

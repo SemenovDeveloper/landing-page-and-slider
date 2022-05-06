@@ -1,0 +1,11 @@
+.header__notab-cube {
+  height: 107px;
+  width: 109px;
+}
+
+@media screen and (max-width: 992px) {
+  .header__notab-cube {
+    height: 53px;
+    width: 52px;
+  }
+}

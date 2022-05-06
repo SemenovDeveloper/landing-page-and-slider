@@ -1,0 +1,13 @@
+.bi-tool__percent-graph {
+  position: absolute;
+  margin: 465px 0 0 447px;
+  width: 281px;
+  height: 56px;
+}
+@media screen and (max-width: 767px) {
+  .bi-tool__percent-graph {
+    margin: 187px 0 0 247px;
+    width: 296px;
+    height: 59px;
+  }
+}

@@ -1,0 +1,16 @@
+.contact__title {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 41px;
+  color: #ffffff;
+  margin: 0 73px 30px 55px;
+}
+@media screen and (max-width: 767px) {
+  .contact__title {
+    font-size: 24px;
+    line-height: 33px;
+    margin: 39px 54px 30px 33px;
+  }
+}

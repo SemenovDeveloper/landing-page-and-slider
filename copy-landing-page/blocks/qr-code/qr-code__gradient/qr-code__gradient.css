@@ -1,0 +1,20 @@
+.qr-code__gradient {
+  z-index: 2;
+  position: absolute;
+  width: 1440px;
+  height: 682px;
+  top: 5px;
+  left: 0;
+  background: linear-gradient(179.83deg, #000000 -3.1%, rgba(0, 0, 0, 0) 56.76%, #000000 83.92%);
+}
+@media screen and (max-width: 560px) {
+  .qr-code__gradient {
+    top: 0px;
+    left:50%;
+    transform: translateX(-50%);
+    width: 416px;
+    height: 335px;
+    background: linear-gradient(179.83deg, #000000 -3.1%, rgba(0, 0, 0, 0) 56.76%, #000000 83.92%);
+    z-index: 2;
+  }
+}

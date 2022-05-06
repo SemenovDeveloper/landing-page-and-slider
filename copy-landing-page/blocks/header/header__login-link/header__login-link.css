@@ -1,0 +1,19 @@
+.header__login-link {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 500;
+  height: 22px;
+  border-bottom: 1px solid #ffffff;
+  margin: 0 15px;
+}
+
+@media screen and (max-width: 992px) {
+  .header__login-link {
+    font-family: "Noto Sans";
+    font-size: 14px;
+    line-height: 19px;
+  }
+}

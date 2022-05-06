@@ -1,0 +1,19 @@
+.qr-code__night-life {
+  position: absolute;
+  top: -17px;
+  left: 1213px;
+  z-index: 3;
+  width: 139px;
+  height: 54px;
+  transform: rotate(-12.84deg)
+}
+@media screen and (max-width: 560px) {
+  .qr-code__night-life {
+    top: 709px;
+    left: 117px;
+    transform: translateX(-50%) scale(0.5) rotate(-12.84deg);
+    width: 88px;
+    height: 35px;
+    z-index: 2;
+  }
+}

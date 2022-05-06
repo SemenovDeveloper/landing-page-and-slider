@@ -1,0 +1,12 @@
+.mission {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 992px) {
+  .mission {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,18 @@
+.qr-code__cocktail {  
+  position: absolute;
+  top: 0;
+  left: 789px;
+  z-index: 3;
+  width: 811px;
+  height: 606px;
+}
+@media screen and (max-width: 560px) {
+  .qr-code__cocktail {
+    top: 601px;
+    left: 279px;
+    transform: translateX(-50%);
+    width: 312px;
+    height: 297px;
+    z-index: 2;
+  }
+}

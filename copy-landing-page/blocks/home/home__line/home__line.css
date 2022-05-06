@@ -1,0 +1,16 @@
+.home__line {
+  z-index: 2;
+  width: 140px;
+  height: 0px;
+  border: 4px solid #ffffff;
+  transform: rotate(120.61deg);
+  position: absolute;
+  left: 70px;
+  top: 640px;
+}
+
+@media screen and (max-width: 1060px) {
+  .home__line {
+    display: none;
+  }
+}

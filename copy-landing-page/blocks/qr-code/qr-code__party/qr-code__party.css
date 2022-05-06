@@ -1,0 +1,18 @@
+.qr-code__party {
+  position: absolute;
+  top: 0;
+  left: -33px;
+  width: 811px;
+  height: 606px;
+}
+
+@media screen and (max-width: 560px) {
+  .qr-code__party {
+    top: 0px;
+    left:50%;
+    transform: translateX(-50%);
+    width: 375px;
+    height: 311px;
+    z-index: 1;
+  }
+}

@@ -1,0 +1,24 @@
+.home {
+  margin: -200px 0 0 0;
+  padding: 200px 0 0 0;
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "text iphone"
+    "text iphone"
+    ". iphone"
+    "download stores";
+  grid-template-columns: 1fr 40%;
+}
+
+@media screen and (max-width: 992px) {
+  .home {
+    grid-template-areas:
+      "text iphone"
+      "text iphone"
+      "download download"
+      "stores stores";
+    grid-template-columns: 1fr 25%;
+  }
+}

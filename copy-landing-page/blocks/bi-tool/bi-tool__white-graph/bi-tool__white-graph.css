@@ -1,0 +1,13 @@
+.bi-tool__white-graph {
+  position: absolute;
+  margin: 0px 0 0 337px;
+  width: 252px;
+  height: 150px;
+}
+@media screen and (max-width: 767px) {
+  .bi-tool__white-graph {
+    margin: 129px 0 0 55px;
+    width: 145px;
+    height: 86px;
+  }
+}

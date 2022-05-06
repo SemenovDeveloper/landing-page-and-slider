@@ -1,0 +1,17 @@
+.bi-tool__text {
+  z-index: 3;
+  position: relative;
+  width: 34.5%;
+  margin: 294px 0 0 100px;
+}
+@media screen and (max-width: 1060px) {
+  .bi-tool__text  {
+    margin-left: 15px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .bi-tool__text {
+    width: auto;
+    margin: 144px 15px 0 15px;
+  }
+}

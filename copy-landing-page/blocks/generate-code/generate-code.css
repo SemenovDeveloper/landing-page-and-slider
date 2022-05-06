@@ -1,0 +1,12 @@
+.generate-code {    
+  width: 100%;
+  height: 1018px;
+  margin-top: -105px;
+  position: relative;
+}
+@media screen and (max-width: 767px) {
+  .generate-code {
+    margin-top: 0px;
+    height: 747px;
+  }
+}

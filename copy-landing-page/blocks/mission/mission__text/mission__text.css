@@ -1,0 +1,20 @@
+.mission__text {
+  z-index: 5;
+  width: 358px;
+  height: 322px;
+  position: absolute;
+  top: 236px;
+  left: 60%;
+  transition: left 2s linear;
+}
+
+@media screen and (max-width: 992px) {
+  .mission__text {
+    position: static;
+    width: auto;
+    height: auto;
+    top: auto;
+    left: auto;
+    margin: 95px 15px 0 15px;
+  }
+}

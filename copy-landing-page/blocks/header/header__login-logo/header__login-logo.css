@@ -1,0 +1,10 @@
+.header__login-logo {
+  width: 26px;
+  height: 24.99px;
+}
+
+@media screen and (max-width: 992px) {
+  .header__login-logo {
+    display: none;
+  }
+}

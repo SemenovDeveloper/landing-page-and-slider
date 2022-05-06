@@ -1,0 +1,14 @@
+.bi-tool__dark-graph {
+  position: absolute;
+  margin: 292px 0 0 280px;
+  z-index: 2;
+  width: 194px;
+  height: 118px;
+}
+@media screen and (max-width: 767px) {
+  .bi-tool__dark-graph {
+    margin: 49px 0 0 293px;
+    width: 91px;
+    height: 55px;
+  }
+}

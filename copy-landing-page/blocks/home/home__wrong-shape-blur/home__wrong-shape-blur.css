@@ -1,0 +1,23 @@
+.home__wrong-shape-blur {
+  width: 662px;
+  height: 783px;
+  left: 60%;
+  top: 25px;
+  position: absolute;
+  background-image: url(./img/home-blur-wrong-shape.svg);
+  background: rgba(250, 0, 255, 0.2);
+  filter: blur(250px);
+  transform: rotate(-105.26deg);
+  overflow: hidden;
+}
+
+@media screen and (max-width: 992px) {
+  .home__wrong-shape-blur {
+    width: 363px;
+    height: 474px;
+    background-image: url(./img/wrong-shape-blur-mobile.svg);
+    background: rgba(250, 0, 255, 0.5);
+    filter: blur(250px);
+    transform: rotate(-90.69deg);
+  }
+}

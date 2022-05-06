@@ -1,0 +1,15 @@
+.header__notab-block {
+  z-index: 10;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 23px 0 0 85px;
+}
+
+@media screen and (max-width: 992px) {
+  .header__notab-block {
+    margin-left: 15px;
+    margin: 5px 0 0 15px;
+    justify-content: space-between;
+  }
+}

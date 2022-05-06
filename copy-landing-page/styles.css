@@ -5,8 +5,19 @@
 @import url("./blocks/container/container.css");
 
 @import url("./blocks/text/text.css");
+@import url("./blocks/text/text_at-scanner.css");
+@import url("./blocks/text/text_at-qr-code.css");
+@import url("./blocks/text/text_at-generate-code.css");
 @import url("./blocks/text/text__title/text__title.css");
+@import url("./blocks/text/text__title/text__title_at-home.css");
+@import url("./blocks/text/text__title/text__title_at-mission.css");
+@import url("./blocks/text/text__title/text__title_at-bi.css");
+@import url("./blocks/text/text__title/text__title_at-generate-code.css");
 @import url("./blocks/text/text__subtitle/text__subtitle.css");
+@import url("./blocks/text/text__subtitle/text__subtitle_at-home.css");
+@import url("./blocks/text/text__subtitle/text__subtitle_at-scanner.css");
+@import url("./blocks/text/text__subtitle/text__subtitle_at-bi.css");
+@import url("./blocks/text/text__subtitle/text__subtitle_at-generate-code.css");
 
 @import url("./blocks/app-links/app-links.css");
 @import url("./blocks/app-links/app-links_at-home.css");
@@ -16,9 +27,70 @@
 @import url("./blocks/app-links/app-links__googleplay/app-links__gogleplay.css");
 @import url("./blocks/app-links/app-links__googleplay/app-links__googleplay_big.css");
 
+@import url("./blocks/header/header.css");
+@import url("./blocks/header/header__notab-block/header__notab-block.css");
+@import url("./blocks/header/header__notab-cube/header__notab-cube.css");
+@import url("./blocks/header/header__name/header__name.css");
+@import url("./blocks/header/header__login/header__login.css");
+@import url("./blocks/header/header__login-logo/header__login-logo.css");
+@import url("./blocks/header/header__login-link/header__login-link.css");
 
+@import url("./blocks/home/home.css");
+@import url("./blocks/home/home__line/home__line.css");
+@import url("./blocks/home/home__round-blur/home__round-blur.css");
+@import url("./blocks/home/home__wrong-shape-blur/home__wrong-shape-blur.css");
+@import url("./blocks/home/home__iphone/home__iphone.css");
+@import url("./blocks/home/home__download-caption/home__download-caption.css");
+@import url("./blocks/home/home__text/home__text.css");
 
+@import url("./blocks/partnership/partnership.css");
 
+@import url("./blocks/contact/contact.css");
+@import url("./blocks/contact/contact__title/contact__title.css");
+@import url("./blocks/contact/contact__link/contact__link.css");
+
+@import url("./blocks/mission/mission.css");
+@import url("./blocks/mission/mission__iphone/mission__iphone.css");
+@import url("./blocks/mission/mission__iphone/mission__iphone_rotate.css");
+@import url("./blocks/mission/mission__text/mission__text.css");
+@import url("./blocks/mission/mission__text/mission__text_slide-out.css");
+@import url("./blocks/mission/mission__round-blur/mission__round-blur.css");
+
+@import url("./blocks/scanner/scanner.css");
+@import url("./blocks/scanner/scanner__blur-layer/scaner__blur-layer.css");
+@import url("./blocks/scanner/scaner__barman/scaner__barman.css");
+@import url("./blocks/scanner/scaner__iphone-verification/scanner__iphone-verification.css");
+@import url("./blocks/scanner/scanner__iphone-success/scanner__iphone-success.css");
+
+@import url("./blocks/bi-tool/bi-tool.css");
+@import url("./blocks/bi-tool/bi-tool__text/bi-tool__text.css");
+@import url("./blocks/bi-tool/bi-tool__blur/bi-tool__blur.css");
+@import url("./blocks/bi-tool/bi-tool__graph-wrapper/bi-tool__graph-wrapper.css");
+@import url("./blocks/bi-tool/bi-tool__graphics/bi-tool__graphics.css");
+@import url("./blocks/bi-tool/bi-tool__blue-graph/bi-tool__blue-graph.css");
+@import url("./blocks/bi-tool/bi-tool__dark-graph/bi-tool__dark-graph.css");
+@import url("./blocks/bi-tool/bi-tool__bar-graph/bi-tool__bar-graph.css");
+@import url("./blocks/bi-tool/bi-tool__percent-graph/bi-tool__percent-graph.css");
+@import url("./blocks/bi-tool/bi-tool__round-graph/bi-tool__round-graph.css");
+@import url("./blocks/bi-tool/bi-tool__sector-graph/bi-tool__sector-graph.css");
+@import url("./blocks/bi-tool/bi-tool__white-graph/bi-tool__white-graph.css");
+
+@import url("./blocks/qr-code/qr-code.css");
+@import url("./blocks/qr-code/qr-code__background/qr-code__background.css");
+@import url("./blocks/qr-code/qr-code__gradient/qr-code__gradient.css");
+@import url("./blocks/qr-code/qr-code__party/qr-code__party.css");
+@import url("./blocks/qr-code/qr-code__night-life/qr-code__night-life.css");
+@import url("./blocks/qr-code/qr-code__cocktail/qr-code__cocktail.css");
+@import url("./blocks/qr-code/qr-code__description/qr-code__description.css");
+@import url("./blocks/qr-code/qr-code__iphone-payment/qr-code__iphone-payment.css");
+@import url("./blocks/qr-code/qr-code__iphone-coocking/qr-code__iphone-coocking.css");
+
+@import url("./blocks/generate-code/generate-code.css");
+@import url("./blocks/generate-code/generate-code__gradient/generate-code__gradient.css");
+@import url("./blocks/generate-code/generate-code__notab/generate-code__notab.css");
+@import url("./blocks/generate-code/generate-code__arrow/generate-code__arrow.css");
+@import url("./blocks/generate-code/generate-code__scan-text/generate-code__scan-text.css");
+@import url("./blocks/generate-code/generate-code__iphone/generate-code__iphone.css");
 
 /* .wrapper {
   min-height: 100%;
@@ -181,7 +253,7 @@
 } */
 
 /* --header------------------------------------ */
-.header {
+/* .header {
   z-index: 25;
   width: 100%;
   left: 0;
@@ -194,9 +266,9 @@
   .header {
     justify-content: space-between;
   }
-}
+} */
 
-.header__notab-block {
+/* .header__notab-block {
   z-index: 10;
   display: flex;
   justify-content: flex-start;
@@ -210,9 +282,9 @@
     margin: 5px 0 0 15px;
     justify-content: space-between;
   }
-}
+} */
 
-.header__notab-cube {
+/* .header__notab-cube {
   height: 107px;
   width: 109px;
 }
@@ -222,9 +294,9 @@
     height: 53px;
     width: 52px;
   }
-}
+} */
 
-.header__name {
+/* .header__name {
   height: 25px;
   width: 96px;
 }
@@ -234,9 +306,9 @@
     height: 12px;
     width: 46px;
   }
-}
+} */
 
-.header__login {
+/* .header__login {
   z-index: 10;
   display: flex;
   align-items: center;
@@ -250,9 +322,9 @@
   .header__login {
     margin: 5px 0 0 15px;
   }
-}
+} */
 
-.header__login-logo {
+/* .header__login-logo {
   width: 26px;
   height: 24.99px;
 }
@@ -261,9 +333,9 @@
   .header__login-logo {
     display: none;
   }
-}
+} */
 
-.header__login-link {
+/* .header__login-link {
   text-decoration: none;
   color: #ffffff;
   font-family: "Noto Sans";
@@ -281,10 +353,10 @@
     font-size: 14px;
     line-height: 19px;
   }
-}
+} */
 
 /* --HOME------------------------------------------------ */
-
+/* 
 .home {
   margin: -200px 0 0 0;
   padding: 200px 0 0 0;
@@ -308,9 +380,9 @@
       "stores stores";
     grid-template-columns: 1fr 25%;
   }
-}
+} */
 
-.home__line {
+/* .home__line {
   z-index: 2;
   width: 140px;
   height: 0px;
@@ -325,9 +397,9 @@
   .home__line {
     display: none;
   }
-}
+} */
 
-.home__round-blur {
+/* .home__round-blur {
   z-index: 1;
   position: absolute;
   left: 93px;
@@ -342,8 +414,8 @@
   .home__round-blur {
     display: none;
   }
-}
-.home__wrong-shape-blur {
+} */
+/* .home__wrong-shape-blur {
   width: 662px;
   height: 783px;
   left: 60%;
@@ -365,9 +437,9 @@
     filter: blur(250px);
     transform: rotate(-90.69deg);
   }
-}
+} */
 
-.home__iphone {
+/* .home__iphone {
   width: 333px;
   height: 668px;
   z-index: 2;
@@ -384,9 +456,9 @@
     width: 161px;
     height: 323px;
   }
-}
+} */
 
-.home__download-caption {
+/* .home__download-caption {
   grid-area: download;
   margin: 0 0 0 100px;
   font-family: 'Montserrat';
@@ -402,9 +474,9 @@
     font-size: 24px;
     line-height: 29px;
   }
-}
+} */
 
-.home__text {
+/* .home__text {
   z-index: 2;
   margin: 143px 0 0 100px;
 }
@@ -413,9 +485,9 @@
   .home__text {
     margin: 98px 15px 0 15px;
   }
-}
+} */
 
-.text__title_athome {
+/* .text__title_athome {
   font-size: 64px;
   line-height: 70px;
   color: #ffffff;  
@@ -426,9 +498,9 @@
     font-size: 35px;
     line-height: 40px;
   }
-}
+} */
 
-.text__subtitle_athome {
+/* .text__subtitle_athome {
   font-size: 20px;
   line-height: 27px;
   margin: 129px 0 0 105px;
@@ -441,10 +513,10 @@
     line-height: 22px;
     margin: 24px 0 0 0px;
   }
-}
+} */
 
 /* --Partnership---------------------------------------------- */
-.partnership {
+/* .partnership {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -455,8 +527,8 @@
     flex-direction: column;
     margin-top: 45px;
   }
-}
-.contact {
+} */
+/* .contact {
   width: 503px;
   height: 312px;
   border: 2px solid rgba(255, 255, 255, 0.5);
@@ -473,8 +545,8 @@
     height: auto;
     margin: 15px;
   }
-}
-.contact__title {
+} */
+/* .contact__title {
   font-family: "Noto Sans";
   font-style: normal;
   font-weight: 700;
@@ -489,8 +561,8 @@
     line-height: 33px;
     margin: 39px 54px 30px 33px;
   }
-}
-.contact__link {
+} */
+/* .contact__link {
   font-family: "Noto Sans";
   font-style: normal;
   font-weight: 400;
@@ -510,9 +582,9 @@
     line-height: 25px;
     margin: 0px 54px 40px 33px;
   }
-}
+} */
 /* --Mission-------------------------------- */
-.mission {
+/* .mission {
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -523,9 +595,9 @@
     display: flex;
     flex-direction: column;
   }
-}
+} */
 
-.mission__iphone {
+/* .mission__iphone {
   position: relative;
   border-radius: 85px;
   overflow: hidden;
@@ -559,9 +631,9 @@
   top: 0;
   left: 0;
   object-fit: cover;
-}
+} */
 
-.mission__text {
+/* .mission__text {
   z-index: 5;
   width: 358px;
   height: 322px;
@@ -580,15 +652,13 @@
     left: auto;
     margin: 95px 15px 0 15px;
   }
-}
+} */
 
-.mission__text_slide-out{
+/* .mission__text_slide-out{
   left: 100%;
-}
+} */
 
-.text__title {
-}
-.text__title_atmission {
+/* .text__title_atmission {
   z-index: 5;
   margin-top: 0px;
   font-size: 51px;
@@ -600,11 +670,9 @@
     font-size: 24px;
     line-height: 29px;
   }
-}
+} */
 
-.text__subtitle {
-}
-.text__subtitle_atmission {
+/* .text__subtitle_atmission {
   margin-top: 23px;
   font-size: 18px;
   line-height: 25px;
@@ -614,8 +682,8 @@
     font-size: 16px;
     line-height: 22px;
   }
-}
-.mission__round-blur {
+} */
+/* .mission__round-blur {
   z-index: -1;
   position: absolute;
   left: 197px;
@@ -631,9 +699,9 @@
     left: 15px;
     top: 95px;
   }
-}
+} */
 /* --Scanner------------------------------------- */
-.scanner {
+/* .scanner {
   position: relative;
   display: grid;
   grid-template-areas:
@@ -656,8 +724,8 @@
     "success";
     grid-template-columns: 1fr;
   }
-}
-.scanner__blur-layer{
+} */
+/* .scanner__blur-layer{
   position: absolute;
   top: 0;
   left: 0%;
@@ -672,8 +740,8 @@
     height: 300px;
     background: linear-gradient(179.83deg, #000000 -1.85%, rgba(0, 0, 0, 0.67) 11.21%, rgba(0, 0, 0, 0) 54.71%, #000000 83.92%);                                                      
   }
-}
-.scanner__barman {
+} */
+/* .scanner__barman {
   z-index: 1;
   position: absolute;
   width: 1440px;
@@ -694,8 +762,8 @@
   top: 0;
   left: 0;
   object-fit: cover;
-}
-.scanner__iphone-verification {
+} */
+/* .scanner__iphone-verification {
   width: 333x;
   height: 667px;
   z-index: 3;
@@ -713,8 +781,8 @@
     width: 287px;
     height: 576px;
   }
-}
-.scanner__iphone-success {  
+} */
+/* .scanner__iphone-success {  
   width: 333x;
   height: 667px;
   z-index: 3;
@@ -731,16 +799,9 @@
     margin-top: 55px;
     width: 287px;
     height: 576px;
-  }
-}
-@media screen and (max-width: 1260px) {
-  .text_at_scanner {
-    grid-area: text-scanner;
-    margin: 100px 100px 0px 100px;
-    max-width: 815px;
-  }
-}
-.text_at_scanner {
+  /* }
+} */
+/* .text_at_scanner {
   z-index: 3;
   grid-area: text-scanner;
   margin: 854px 0px 0px 129px;
@@ -757,14 +818,14 @@
   .text_at_scanner {
     margin: 234px 15px 0;
   }
-}
+} */
 
-.text__subtitle_at_scanner {
+/* .text__subtitle_at_scanner {
   max-width: 316px;
-}
+} */
 
 /* --BI-Tool------------------------------------ */
-.bi-tool {
+/* .bi-tool {
   display: flex;
   overflow: hidden;
 }
@@ -772,8 +833,8 @@
   .bi-tool {
     flex-direction: column;
   }
-}
-.bi-tool__text {
+} */
+/* .bi-tool__text {
   z-index: 3;
   position: relative;
   width: 34.5%;
@@ -789,8 +850,8 @@
     width: auto;
     margin: 144px 15px 0 15px;
   }
-}
-.bi-tool__blur{
+} */
+/* .bi-tool__blur{
   position: absolute;
   top: -190px;
   left: -211px;
@@ -805,8 +866,8 @@
   .bi-tool__blur {
     display: none;
   }
-}
-.text__title_at_bi { 
+} */
+/* .text__title_at_bi { 
   margin-top: 0px;
   font-size: 51px;
   line-height: 62px;  
@@ -816,15 +877,15 @@
     font-size: 24px;
     line-height: 29px;
   }
-}
-@media screen and (max-width: 767px) {
+} */
+/* @media screen and (max-width: 767px) {
   .text__subtitle_at_bi {
     font-size: 16px;
     line-height: 22px;
   }
-}
+} */
 
-.bi-tool__graph-wrapper{
+/* .bi-tool__graph-wrapper{
   position: relative;
   width: 743px;
   height: 520px;
@@ -838,16 +899,16 @@
     transform: translateX(-50%);
     margin-top: 30px;
   }
-} 
-.bi-tool__graphics {
+}  */
+/* .bi-tool__graphics {
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;  
-}
+} */
 
-.bi-tool__blue-graph {  
+/* .bi-tool__blue-graph {  
   position: absolute;
   margin: 250px 0 0 25px; 
   width: 192px;
@@ -857,8 +918,8 @@
   .bi-tool__blue-graph {
     display: none;
   }
-}
-.bi-tool__dark-graph {
+} */
+/* .bi-tool__dark-graph {
   position: absolute;
   margin: 292px 0 0 280px;
   z-index: 2;
@@ -871,8 +932,8 @@
     width: 91px;
     height: 55px;
   }
-}
-.bi-tool__bar-graph {
+} */
+/* .bi-tool__bar-graph {
   position: absolute;
   margin: 393px 0 0 207px;
   width: 194px;
@@ -884,8 +945,8 @@
     width: 91px;
     height: 55px;
   }
-}
-.bi-tool__percent-graph {
+} */
+/* .bi-tool__percent-graph {
   position: absolute;
   margin: 465px 0 0 447px;
   width: 281px;
@@ -897,8 +958,8 @@
     width: 296px;
     height: 59px;
   }
-}
-.bi-tool__round-graph {
+} */
+/* .bi-tool__round-graph {
   position: absolute;
   margin: 182px 0 0 461px;
   width: 182px;
@@ -910,8 +971,8 @@
     width: 86px;
     height: 91px;
   }
-}
-.bi-tool__sector-graph {
+} */
+/* .bi-tool__sector-graph {
   position: absolute;
   margin: 183px 0 0 157px;
   width: 233x;
@@ -923,8 +984,8 @@
     width: 109px;
     height: 21px;
   }
-}
-.bi-tool__white-graph {
+} */
+/* .bi-tool__white-graph {
   position: absolute;
   margin: 0px 0 0 337px;
   width: 252px;
@@ -936,9 +997,9 @@
     width: 145px;
     height: 86px;
   }
-}
+} */
 /* --QR-Code---------------------------------------- */
-.qr-code {
+/* .qr-code {
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -971,8 +1032,8 @@
   "iphone-2"
  ;
   }
-}
-.qr-code__background {
+} */
+/* .qr-code__background {
   position: absolute;
   width: 1440px;
   height: 687px;
@@ -986,8 +1047,8 @@
     height: 927px;
     top: 5px;
   }
-}
-.qr-code__gradient {
+} */
+/* .qr-code__gradient {
   z-index: 2;
   position: absolute;
   width: 1440px;
@@ -1006,9 +1067,9 @@
     background: linear-gradient(179.83deg, #000000 -3.1%, rgba(0, 0, 0, 0) 56.76%, #000000 83.92%);
     z-index: 2;
   }
-}
+} */
 
-.qr-code__party {
+/* .qr-code__party {
   position: absolute;
   top: 0;
   left: -33px;
@@ -1024,9 +1085,9 @@
     height: 311px;
     z-index: 1;
   }
-}
+} */
 
-.qr-code__cocktail {  
+/* .qr-code__cocktail {  
   position: absolute;
   top: 0;
   left: 789px;
@@ -1043,9 +1104,9 @@
     height: 297px;
     z-index: 2;
   }
-}
+} */
 
-.qr-code__night-life {
+/* .qr-code__night-life {
   position: absolute;
   top: -17px;
   left: 1213px;
@@ -1063,8 +1124,8 @@
     height: 35px;
     z-index: 2;
   }
-}
-.qr-code__description {
+} */
+/* .qr-code__description {
   grid-area: description;
   display: flex;
   flex-direction: column;
@@ -1084,15 +1145,13 @@
   .qr-code__description{
     margin: 221px 15px 0 15px;
   }
-}
-.text_at_qr-code{
+} */
+/* .text_at_qr-code{
   max-width: 315px;
   margin-bottom: 40px;
-}
-.qr-code__stores {
-}
+} */
 
-.qr-code__iphone-payment {
+/* .qr-code__iphone-payment {
   z-index: 4;
   grid-area: iphone-1;
   width: 333px;
@@ -1105,8 +1164,8 @@
     height: 563.68px;
     justify-self: center;    
   }
-}
-.qr-code__iphone-coocking {
+} */
+/* .qr-code__iphone-coocking {
   margin-top: 10px;
   z-index: 4;
   grid-area: iphone-2;
@@ -1120,9 +1179,9 @@
     height: 563.68px;  
     justify-self: center; 
   }
-}
+} */
 /* --Generate-code------------------------------------------ */
-.generate-code {    
+/* .generate-code {    
   width: 100%;
   height: 1018px;
   margin-top: -105px;
@@ -1133,8 +1192,8 @@
     margin-top: 0px;
     height: 747px;
   }
-}
-.generate-code__gradient {  
+} */
+/* .generate-code__gradient {  
   position: absolute;
   width: 1022px;
   height: 952px;
@@ -1156,8 +1215,8 @@
     filter: blur(94px);
     border-radius: 142.636px;
   }
-}
-.generate-code__notab {
+} */
+/* .generate-code__notab {
   position: absolute;
   width: 100vw;
   height: auto;
@@ -1171,8 +1230,8 @@
   .generate-code__notab { 
     top: 422px
   }
-}
-.generate-code__arrow {
+} */
+/* .generate-code__arrow {
   position: absolute;
   width: 105px;
   height: 65px;
@@ -1187,8 +1246,8 @@
     left: calc(50% + 126px);
     transform: translateX(-50%) rotate(25deg);
   }
-}
-.generate-code__scan-text {
+} */
+/* .generate-code__scan-text {
   position: absolute;
   min-width: 150px;
   top: 415px;
@@ -1216,8 +1275,8 @@
     font-size: 18px;
     line-height: 22px;
   }
-}
-.generate-code__iphone { 
+} */
+/* .generate-code__iphone { 
   position: absolute;
   top: 147px;
   left: 50%;
@@ -1232,9 +1291,9 @@
     height: 364px;
     top: 297px
   }
-}
+} */
 
-.text_at_generate-code {
+/* .text_at_generate-code {
   width: calc(100% - 200px);
   position: absolute;
   margin: 0 100px;
@@ -1244,6 +1303,7 @@
   align-items: center;
   justify-content: space-between;
 }
+
 @media screen and (max-width: 767px) {
   .text_at_generate-code {
     width: auto;
@@ -1251,16 +1311,16 @@
     margin: 0 15px;
     flex-direction: column;    
   }
-}
+} */
 
-.text__title_at_generate-code {
+/* .text__title_at_generate-code {
   max-width: 381px;
-}
+} */
 
-.text__subtitle_at_generate-code {
+/* .text__subtitle_at_generate-code {
   margin-top: 0px;
   max-width: 292px;
-}
+} */
 /* --Advantages--------------------------- */
 .advantages {
   width: 100%;

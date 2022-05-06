@@ -1,0 +1,24 @@
+.scanner {
+  position: relative;
+  display: grid;
+  grid-template-areas:
+  "verification success text-scanner";
+  grid-template-columns: 1fr 1fr 44%;
+}
+@media screen and (max-width: 1260px) {
+  .scanner {
+    grid-template-areas:
+    "text-scanner text-scanner"
+    "verification success";
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 767px) {
+  .scanner {
+    grid-template-areas:
+    "text-scanner"
+    "verification"
+    "success";
+    grid-template-columns: 1fr;
+  }
+}

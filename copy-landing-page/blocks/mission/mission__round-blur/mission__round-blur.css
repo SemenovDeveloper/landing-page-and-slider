@@ -1,0 +1,17 @@
+.mission__round-blur {
+  z-index: -1;
+  position: absolute;
+  left: 197px;
+  top: 7px;
+  width: 85px;
+  height: 85px; 
+  background: #F101BF;
+  opacity: 0.7;
+  filter: blur(100px);
+}
+@media screen and (max-width: 992px) {
+  .mission__round-blur {
+    left: 15px;
+    top: 95px;
+  }
+}

@@ -1,0 +1,15 @@
+.qr-code__background {
+  position: absolute;
+  width: 1440px;
+  height: 687px;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media screen and (max-width: 560px) {
+  .qr-code__background {
+    width: 455px;
+    height: 927px;
+    top: 5px;
+  }
+}

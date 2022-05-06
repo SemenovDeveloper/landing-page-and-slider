@@ -1,0 +1,16 @@
+.generate-code__arrow {
+  position: absolute;
+  width: 105px;
+  height: 65px;
+  top: 342px;
+  left: calc(50% + 249px);
+  transform: translateX(-50%);  
+  z-index: 4;
+}
+@media screen and (max-width: 767px) {
+  .generate-code__arrow { 
+    top: 616px;
+    left: calc(50% + 126px);
+    transform: translateX(-50%) rotate(25deg);
+  }
+}
