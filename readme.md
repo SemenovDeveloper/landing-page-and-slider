@@ -1,2 +1,2 @@
-# Two test projects for **bold** Purrweb
+# Two test projects for Purrweb
 ## Made by Alexander Semenov
