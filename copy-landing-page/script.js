@@ -23,7 +23,6 @@ form.addEventListener('submit', function (event) {
 window.addEventListener('scroll', function (event) {
   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
   const rect = missionSection.getBoundingClientRect();
-  console.log(rect);
   const missionSectionOffset = rect.top + scrollTop;
   const missionSectionHeight = missionSection.offsetHeight;
   const blockPart = 0.5; // coefficient to start an animation on a half of block

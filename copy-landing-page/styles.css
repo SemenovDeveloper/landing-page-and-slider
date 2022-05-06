@@ -1862,6 +1862,11 @@
   margin-right: 24px;
   margin-left: 55px;
 }
+
+.cookies__button:hover {
+  opacity: 0.5;
+}
+
 @media screen and (min-width: 1440px) {
   .cookies__button  {
     margin-right: calc(50% - 720px + 24px);    
