@@ -50,7 +50,6 @@ const images = [
     alt: "Monochrome Sky"
   }
 ];
-
 let imageIndex = 0;
 let width;
 const imagesQuantity = images.length;
@@ -71,8 +70,11 @@ function imgCreate(src, alt, id, index) {
   img.src = src;
   img.id = id;
   img.className = "slider__image";
+
   if (alt != null ) img.alt = alt;
+
   if (index === 0) img.classList.add("slider__image_active")
+
   imageViewport.appendChild(img);
 }
 
@@ -82,13 +84,16 @@ function buttonCreate(index) {
   button.className = "slider__dot-button";
   button.id = "button" + index;
   button.value = index;
+
   if (index === 0) button.style.backgroundColor = "#283044";  
   container.appendChild(button);
   button.addEventListener("click", changeSlide, false);
 }
 
 function changeSlide (evt) {
+
   if(isSliding || imageIndex == evt.target.value) {
+
     return
   } else {
     const pervImageIndex = imageIndex;
@@ -96,6 +101,7 @@ function changeSlide (evt) {
     const pervImage = document.getElementById("content" + pervImageIndex);
     const nextImage = document.getElementById("content" + imageIndex);
     activeSlideButton (imageIndex);
+
     if(imageIndex > pervImageIndex ) {
       slideToLeft(pervImage, nextImage);
     } else {
@@ -106,6 +112,7 @@ function changeSlide (evt) {
 
 function nextSlide() {
   if(isSliding) {
+
     return
   } else {
     const pervImage = document.getElementById("content" + imageIndex);
@@ -118,6 +125,7 @@ function nextSlide() {
 
 function pervSlide () {
   if(isSliding) {
+
     return
   } else {
     const pervImage = document.getElementById("content" + imageIndex);
@@ -129,11 +137,12 @@ function pervSlide () {
 }
 
 function slideToLeft(pervImage, nextImage) {
-  isSliding = true;
   let i = 1;
+  isSliding = true;  
   nextImage.classList.add("slider__image_active");    
   nextImage.style.transform = "translateX(100%)";
   pervImage.classList.add("slider__image_active");
+
   let startSliding = setInterval(function () {
     i++;
     pervImage.style.transform = "translateX(-" + i + "%)";
@@ -147,11 +156,12 @@ function slideToLeft(pervImage, nextImage) {
 }
 
 function slideToRight(pervImage, nextImage) {
-  isSliding = true;
   let i = 1;
+  isSliding = true;  
   nextImage.classList.add("slider__image_active");    
   nextImage.style.transform = "translateX(-100%)";
   pervImage.classList.add("slider__image_active");
+
   let startSliding = setInterval(function () {
     i++;
     pervImage.style.transform = "translateX(" + i + "%)";
@@ -166,6 +176,7 @@ function slideToRight(pervImage, nextImage) {
 
 function activeSlideButton (index) {
   const sliderButtons = document.querySelectorAll(".slider__dot-button");
+  
   sliderButtons.forEach( button => {
     button.style.backgroundColor = "transparent"
   });
