@@ -23,7 +23,6 @@
 @import url("./blocks/text/text__subtitle/text__subtitle_at-generate-code.css");
 @import url("./blocks/text/text__subtitle/text__subtitle_center.css");
 
-
 @import url("./blocks/app-links/app-links.css");
 @import url("./blocks/app-links/app-links_at-home.css");
 @import url("./blocks/app-links/app-links_big.css");
@@ -96,7 +95,6 @@
 @import url("./blocks/generate-code/generate-code__arrow/generate-code__arrow.css");
 @import url("./blocks/generate-code/generate-code__scan-text/generate-code__scan-text.css");
 @import url("./blocks/generate-code/generate-code__iphone/generate-code__iphone.css");
-
 
 @import url("./blocks/advantages/advantages.css");
 @import url("./blocks/advantages/advantages__longscroll/advantages__longscroll.css");
